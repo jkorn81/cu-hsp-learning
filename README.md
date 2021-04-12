@@ -15,18 +15,18 @@ Students will be also introduced to the idea of distributed machine learning sys
 
 The repository contains the fcourse material in the following sub-folders:
 
-(1) Introduction to the Course, Instructor, and Classmates. 
-(2) Introduction to Big Data. 
-(3) Introduction Machine Learning. 
-(4) Prepare Tools
-(5) Processing Data
-(6) Explore Data
-(7) Classical ML
-(8) Deep Learning 
-(9) Reporting 
-(10) Project
-(11) assignments
-(12) data
-(13) syllabus
+- (1) Introduction to the Course, Instructor, and Classmates. 
+- (2) Introduction to Big Data. 
+- (3) Introduction Machine Learning. 
+- (4) Prepare Tools
+- (5) Processing Data
+- (6) Explore Data
+- (7) Classical ML
+- (8) Deep Learning 
+- (9) Reporting 
+- (10) Project
+- (11) assignments
+- (12) data
+- (13) syllabus
 
 Think of the repository as a tool chest containing all the bits of information and chunks of code that you need to conduct machine learning research and begin seveloping the components to a distributed machine learning system. 
