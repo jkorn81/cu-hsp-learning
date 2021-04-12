@@ -1,0 +1,64 @@
+---
+output: 
+  pdf_document:
+    pandoc_args: --listings
+    includes:
+      in_header: preamble.tex
+title: "R and Python Learning"
+author:  "Assignment #1"
+date: "`r Sys.Date()`"
+
+fontfamily: mathpazo
+fontsize: 10pt
+header-includes:
+   - \linespread{1.05}
+   - \usepackage{fancyhdr}
+   - \pagestyle{fancy}
+   - \usepackage{lastpage}
+   - \usepackage{listings}
+   - \fancyhead[RO,RE]{\thepage\ of \pageref{LastPage}}
+   - \fancyfoot[LO,LE]{\changefont Columbia University - BIG DATA, MACHINE LEARNING, AND THEIR REAL WORLD APPLICATIONS}
+---
+\newcommand{\changefont}{%
+    \fontsize{8}{8}\selectfont
+}
+\addtolength{\headheight}{1.0cm} 
+\pagestyle{fancyplain} 
+\rhead{\thepage\ of \pageref{LastPage}}
+\lhead{\includegraphics[height=1.2cm]{C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo}} 
+\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyfoot[C]{} 
+
+# Instructions:
+
+**Step 1:** Open the rmarkdown file labeled `assign.rmd` @ [assignment1](https://github.com/jkorn81/cu-hsp-learning/tree/main/assignments/assignment1)
+
+**Step 2:** Revise line #3 with your name. *(... this is the yaml header in an rmarkdown file. We will discuss this more later on.)*
+
+- The rmarkdown file you will be knitting will output into an htlm_document. 
+
+**Step 3:** Address the questions providing your responses in each empty code chunk.
+
+- Provide a response in each each question. 
+- Each response should be completed in the associated code chunk nested below the question. 
+- If the question requires a written response I want you to input a stored variable containing a string in the code chunk and print it. 
+
+---
+
+:::: {..lstset data-latex=""}
+**_.i.e._** 
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+example = "Here is an example of storing a variable as a string and printing it from within the code chunk."
+print(example)
+```
+:::
+
+---
+
+**Step 4:** When you have addressed all the questions providing a response in each of the empty codie chunks you can knit the file by clicking on the `Knit` button. 
+
+*Note, a html document will generate in your working directory.*
+
+**Step 5:** Submit the generated html file to the instructor. 
