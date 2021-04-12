@@ -1,0 +1,12 @@
+---
+title: "R and Python Learning"
+author: "Enter Your Name"
+date: "`r Sys.Date()`"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(reticulate)
+```
+

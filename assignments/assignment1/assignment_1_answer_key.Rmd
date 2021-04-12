@@ -1,0 +1,126 @@
+---
+title: "R and Python Learning"
+author: "Enter Your Name"
+date: "`r Sys.Date()`"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(reticulate) #Note this is needed to connect python with Rstudio
+```
+
+# Variables:
+
+1.	Create a variable called x whose value corresponds to a number. Print out the value.
+
+```{r q1r}
+x = 432
+x
+```
+
+```{python q1p}
+x = 432
+print(x)
+```
+
+2.	Reassign the value of x to x * 2. Print out the new value of x to verify that it has changed.
+
+```{r q2r}
+x = x * 2
+x
+```
+
+```{python q2p}
+x = x * 2
+print(x)
+```
+
+3.	Try making a character (string) variable. You can call these variables whatever you would like. 
+
+```{r q3r}
+charvar = c("a", "string", "variable")
+```
+
+```{python q3p}
+charvar = ["a", "string", "variable"]
+```
+
+# Lists:
+
+4.	Create a numeric vector with three elements using c().
+
+```{r q4r}
+numvar = c(1, 2, 3, 4)
+```
+
+```{python q4p}
+numvar = [1, 2, 3, 4]
+```
+
+5.	Create a character vector with three elements using c().
+
+```{r q5r}
+charvar2 = c("things", "and", "stuff")
+```
+
+```{python q5p}
+charvar2 = ["things", "and", "stuff"]
+```
+
+6.	Create a numeric vector called age whose elements contain the ages of three people. 
+
+```{r q6r}
+age = c(24,32,29)
+```
+
+```{python q6p}
+age = [24,32,29]
+```
+
+7.	Use "indexing by number" to get R and Python to print out the first element of one of the lists you created in the last questions.
+
+```{r q7r}
+age[1]
+```
+
+```{python q7p}
+age[1]
+```
+
+# Dataframes:
+
+8.	Load the data contained in the data folder. 
+9. Use the $ method to print out the Wind variable in airquality.
+
+```{r q8-9r}
+library(readr)
+R_Python_learning <- read_csv("data/R&Python_learning.csv")
+R_Python_learning$Wind
+R_Python_learning$Wind[3]
+```
+
+```{python q8-9p}
+import pandas as pd
+R_Python_learning(r'./data/text.csv')
+R_Python_learning[,'Wind']
+```
+
+# Functions: 
+
+11.	Make a simple function to calculate x + 6.
+
+```{r q11r}
+x = 3
+df <- function(x) { 
+  print(x + 6)
+}
+df(x)
+```
+
+```{python q11p}
+def df(x): 
+  return x + 6
+x = 3
+df(x)
+```
