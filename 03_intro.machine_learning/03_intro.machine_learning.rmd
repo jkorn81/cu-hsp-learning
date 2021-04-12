@@ -1,0 +1,147 @@
+---
+title: "Introduction to Big data"
+author: "Jonathan Wayne Korn @ Columbia University"
+date: "3/19/2021"
+output: slidy_presentation
+---
+
+# What is Big Data?
+
+- There are some things that are **so big** that they have implications for everyone, whether we want it or not. 
+
+- **Big Data** is one of those thongs, and is completely transforming the way we do business and is impacting most other parts of our lives. 
+
+# Basic Idea 
+
+- Behind the phrase **_'Big Data_** is tht everything we do is increasingly leaving a digital trace *(or data)*, which we *(and others)* can use/analyze. 
+
+- Big Data therefore refers to our ability to make use of the ever-increasing volumes of data. 
+
+# The Scope of Big Data 
+
+- *"From the dawn of civilization until 2003, humankind generated five exabytes of data. Now we produce five exabytes every two days ... and the pace is accelerating."*
+
+     - Eric Schmidt Executive Chairman, Google
+     
+# Activity/Transaction Data
+
+- Simple activities/transactions like listening to music or reading a book are now generating data. 
+
+    - Digital music players and eBoks collect data on our activities/transactions. 
+    - Your smart phone collects data on how you use it and your web browser collects information on what you are searching for. 
+    - Your credit card company collects data on where you shop and your shops collect data on what you buy.
+    - It is hard to imagine any activity/transaction that does not generate data. 
+    
+# Conversation Data 
+
+- Our conversation are now digitally recorded *whether in text or speech*. 
+
+- It all started with emails, but nowadays most of our conversations leave a digital trail. 
+
+- Just think of all the ocnversations we have on social media sites. 
+
+- Even many of our phone conversations are now digitally recorded. 
+
+# Photo and Image Data
+
+- Just think about all the pictures we take on our smart phones or digital cameras. 
+
+- We upload and share 100s of thousands of them on social media sites every second. 
+
+- The increasing amounts of CCTV cameras take video images and we upload hundreds of hours of video images to YouTube and other sites every minute. 
+
+# Sensor Data 
+
+- We are increasingly surrounded by sensors that collect and share data.
+
+- Take your smart phone, it contains a global positiining sensor to track exactly where you are every second of the day. 
+
+    - It includes an accelometer to track the speed and direction at which you are traveling. 
+   
+- We now have sensors in many devices and products.
+
+# Internet of Things Data 
+
+- We now have smart TVs that are able to collect and process data, we have smart watches, smart fridegs, and smart alarms. 
+
+- The internet of Things, or Internet of Everything connects these devices so that 
+
+    - *i.e.* the traffic sensors on the road send data to your alarm clock whcih will wake you up earlier than planned because the blocked road means you have to leave earlier to make your 9am meeting... 
+    
+# Datafication 
+
+- With the datafication comes big data, which is often described using the four $V_s$:
+
+     (1) Volume
+     (2) Velocity
+     (3) Variety
+     (4) Veracity 
+
+# Volume 
+
+- refers to the vast amounts of data geenrated every second. 
+
+- We are not talking Terabytes but Zettabytes or Bronobytes. 
+
+- If we take all the data generated in teh world between the beggining of time and 2000, the same amount of data will soon be geenrated every minute. 
+
+- New bug data tools use distributed systems so that we can store and analyse the data across databases that are dotted around anywhere in the world. 
+
+# Velocity
+
+- refers to the speed at which new data is geenrated and the speed at which the data moves around. 
+
+- Just think of social media messages going viral in seconds. 
+
+- technology allows us now to analyze the data while it is being generated *(sometimes refferred to as in memory analytics)*, without ever putting it into databases. 
+
+# Variety 
+
+- refers to the different types of data we can now use. 
+
+- In the past we only focused on structured data that neatly fitted into tables or relational databses, such as financial data. 
+
+- In fact, 80% of the world's data is unstructured *(text, images, video, voice, etc)*.
+
+- With big data technology we can now analyze and bring together data of different types such as *messages, social media conversations, photos, sensor data, video, or voice recordings.*
+
+# Veracity 
+
+- refers to the messiness or trustworthiness of the data. 
+
+- With many forms of big data quality and accuracy are less controllable *(just think of Twitter posts with hash tags, abbreviations, typos, and colloquial speech as well as reliability and accuracy content)* but technology now allows us to work with this type of data. 
+
+# Turning Big Data Into Value 
+
+- The datafication of our world gives us unprecedented amounts of data terms of Volume, Velocity, Variety, and Veracity. 
+
+- The latest technology such as cloud computing and distributed systems together with the latest software and analysis approaches allow us to leverage all types of data to gain insight and add value. 
+
+```{r, echo = FALSE, out.width="50%", fig.align='center'}
+knitr::include_graphics("./pictures/img1.png")
+```
+
+# Use Case Example of Big Data ~ Better Understand and Target Customers:
+
+- To better understand and target customers, companies expand their traditional datasets with *social media data, browser, text analytics or sensor data* to get a more complete picture of their customer. 
+
+- The big objective, in many cases, is to create predictive models. 
+
+- Using big data, Telecom companies can now better predict customer chirn; retailers can predict what products will sell, and car insurance companies understand how well thier customers actually drive. 
+
+# Use Case Example of Big Data ~ Understand and Optimize Business Processes: 
+
+- Nig data is also increasingly used to optimize business processes. 
+
+- Retailers are able to optimize their stock based on prediictive models generated from *social media data, webs search trends and weather forecasts.* 
+
+- Another example is supply chain or delivery route optimization using data from geographic positioning and redio frequency identification sensors. 
+
+# Use Case Example of Big Data ~ Improving Health:
+
+- The computing power of big data analytics enables us to find new cures and better understand and predict diesease patterns. 
+
+- We can use all the data from smart watches and wearable devices to better understand links between lifestyles and diseases. 
+
+- Big data analytics also allow us to monitor and predict epidemics and disease outbreaks, simply by listening to what people are saying, *i.e.* *"Feeling rubbish today - in bed with a cold"* or searching for on the internet, *i.e.* *"cures for flu"*. 
+
