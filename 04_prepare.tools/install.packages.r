@@ -286,6 +286,10 @@ if (!require('NbClust')) {
   install.packages("NbClust", dependencies = TRUE)
   library(NbClust)
 }
+if (!require("magrittr")) {
+  install.packages("magrittr")
+  library(magrittr)
+}
 if (!require("reticulate")) {
   install.packages('./packages/reticulate-1.15.tar.gz', repos = NULL, type ='source')
   library(reticulate)
