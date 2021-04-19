@@ -6,6 +6,10 @@ if (!require("outlieR")) {
   remotes::install_github("rushkin/outlieR")
   library(outlieR)
 }
+if (!require("magrittr")) {
+  install.packages("magrittr")
+  library(magrittr)
+}
 data = data %>% outlieR::impute(flag = NULL, fill = "mean", 
                                 level = 0.1, nmax = NULL,
                                 side = NULL, crit = "lof", 
