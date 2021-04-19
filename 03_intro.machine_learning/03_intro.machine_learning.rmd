@@ -1,147 +1,199 @@
 ---
-title: "Introduction to Big data"
+title: "Introduction to Machine Learning"
 author: "Jonathan Wayne Korn @ Columbia University"
-date: "3/19/2021"
-output: slidy_presentation
+date: "`r Sys.Date()`"
+output: beamer_presentation
 ---
 
-# What is Big Data?
+# Introduction to Machine Learning
 
-- There are some things that are **so big** that they have implications for everyone, whether we want it or not. 
-
-- **Big Data** is one of those thongs, and is completely transforming the way we do business and is impacting most other parts of our lives. 
-
-# Basic Idea 
-
-- Behind the phrase **_'Big Data_** is tht everything we do is increasingly leaving a digital trace *(or data)*, which we *(and others)* can use/analyze. 
-
-- Big Data therefore refers to our ability to make use of the ever-increasing volumes of data. 
-
-# The Scope of Big Data 
-
-- *"From the dawn of civilization until 2003, humankind generated five exabytes of data. Now we produce five exabytes every two days ... and the pace is accelerating."*
-
-     - Eric Schmidt Executive Chairman, Google
-     
-# Activity/Transaction Data
-
-- Simple activities/transactions like listening to music or reading a book are now generating data. 
-
-    - Digital music players and eBoks collect data on our activities/transactions. 
-    - Your smart phone collects data on how you use it and your web browser collects information on what you are searching for. 
-    - Your credit card company collects data on where you shop and your shops collect data on what you buy.
-    - It is hard to imagine any activity/transaction that does not generate data. 
-    
-# Conversation Data 
-
-- Our conversation are now digitally recorded *whether in text or speech*. 
-
-- It all started with emails, but nowadays most of our conversations leave a digital trail. 
-
-- Just think of all the ocnversations we have on social media sites. 
-
-- Even many of our phone conversations are now digitally recorded. 
-
-# Photo and Image Data
-
-- Just think about all the pictures we take on our smart phones or digital cameras. 
-
-- We upload and share 100s of thousands of them on social media sites every second. 
-
-- The increasing amounts of CCTV cameras take video images and we upload hundreds of hours of video images to YouTube and other sites every minute. 
-
-# Sensor Data 
-
-- We are increasingly surrounded by sensors that collect and share data.
-
-- Take your smart phone, it contains a global positiining sensor to track exactly where you are every second of the day. 
-
-    - It includes an accelometer to track the speed and direction at which you are traveling. 
-   
-- We now have sensors in many devices and products.
-
-# Internet of Things Data 
-
-- We now have smart TVs that are able to collect and process data, we have smart watches, smart fridegs, and smart alarms. 
-
-- The internet of Things, or Internet of Everything connects these devices so that 
-
-    - *i.e.* the traffic sensors on the road send data to your alarm clock whcih will wake you up earlier than planned because the blocked road means you have to leave earlier to make your 9am meeting... 
-    
-# Datafication 
-
-- With the datafication comes big data, which is often described using the four $V_s$:
-
-     (1) Volume
-     (2) Velocity
-     (3) Variety
-     (4) Veracity 
-
-# Volume 
-
-- refers to the vast amounts of data geenrated every second. 
-
-- We are not talking Terabytes but Zettabytes or Bronobytes. 
-
-- If we take all the data generated in teh world between the beggining of time and 2000, the same amount of data will soon be geenrated every minute. 
-
-- New bug data tools use distributed systems so that we can store and analyse the data across databases that are dotted around anywhere in the world. 
-
-# Velocity
-
-- refers to the speed at which new data is geenrated and the speed at which the data moves around. 
-
-- Just think of social media messages going viral in seconds. 
-
-- technology allows us now to analyze the data while it is being generated *(sometimes refferred to as in memory analytics)*, without ever putting it into databases. 
-
-# Variety 
-
-- refers to the different types of data we can now use. 
-
-- In the past we only focused on structured data that neatly fitted into tables or relational databses, such as financial data. 
-
-- In fact, 80% of the world's data is unstructured *(text, images, video, voice, etc)*.
-
-- With big data technology we can now analyze and bring together data of different types such as *messages, social media conversations, photos, sensor data, video, or voice recordings.*
-
-# Veracity 
-
-- refers to the messiness or trustworthiness of the data. 
-
-- With many forms of big data quality and accuracy are less controllable *(just think of Twitter posts with hash tags, abbreviations, typos, and colloquial speech as well as reliability and accuracy content)* but technology now allows us to work with this type of data. 
-
-# Turning Big Data Into Value 
-
-- The datafication of our world gives us unprecedented amounts of data terms of Volume, Velocity, Variety, and Veracity. 
-
-- The latest technology such as cloud computing and distributed systems together with the latest software and analysis approaches allow us to leverage all types of data to gain insight and add value. 
+We have to ask ourselves a fundamental question regarding the idea of a machine learning, which is:
 
 ```{r, echo = FALSE, out.width="50%", fig.align='center'}
-knitr::include_graphics("./pictures/img1.png")
+knitr::include_graphics("./pictures/learning.png")
 ```
 
-# Use Case Example of Big Data ~ Better Understand and Target Customers:
+     
+# Definition of Learning 
 
-- To better understand and target customers, companies expand their traditional datasets with *social media data, browser, text analytics or sensor data* to get a more complete picture of their customer. 
+- **_One Definition:_** Learning is optimizing performance *(based on some criterion)* using example data or past experience.
 
-- The big objective, in many cases, is to create predictive models. 
+    - In that case, the goal of machine learning is to build algorithms enabled by constraints exposed by representations that support models targeted at:
+    
+        - Thinking,
+        - Perception,
+        - Action.
+        
+- **_Another Definition:_** Statistical learning refers to a vast set of tools for understanding data. 
 
-- Using big data, Telecom companies can now better predict customer chirn; retailers can predict what products will sell, and car insurance companies understand how well thier customers actually drive. 
+    - These tools can be classified as supervised or unsupervised machine learning models.
 
-# Use Case Example of Big Data ~ Understand and Optimize Business Processes: 
+# Defintion of Machine Learning
 
-- Nig data is also increasingly used to optimize business processes. 
+- **_"Field of study that gives computers the ability to learn without being explicitly programmed"_** ~ *Arthur Samuel 1959*
 
-- Retailers are able to optimize their stock based on prediictive models generated from *social media data, webs search trends and weather forecasts.* 
+- **_"How to construct programs that automatically learn from experience"_** ~ *Mitchell 1997*
 
-- Another example is supply chain or delivery route optimization using data from geographic positioning and redio frequency identification sensors. 
+- There are two main types of machine learning including **_supervised and unsupervised learning_**. 
+  
+- We'll talk about supervised learning more than unsupervised learning.
 
-# Use Case Example of Big Data ~ Improving Health:
+# Other Machine Learning Perspectives
 
-- The computing power of big data analytics enables us to find new cures and better understand and predict diesease patterns. 
+- **_Information based Learning:_** We use information to guide or inform our decisions or lead us to the next question.
+When we automate this we will optimize this by minimizing errors or entropy or some parameter.
+Example: decision tree.
 
-- We can use all the data from smart watches and wearable devices to better understand links between lifestyles and diseases. 
+- **_Similarity based Learning:_** What we are doing is putting together things that are similar.
+Example: regression.
 
-- Big data analytics also allow us to monitor and predict epidemics and disease outbreaks, simply by listening to what people are saying, *i.e.* *"Feeling rubbish today - in bed with a cold"* or searching for on the internet, *i.e.* *"cures for flu"*. 
+- **_Probability based Learning:_** Find the probability of belonging to different classes rather than exactly identifying the class.
+Example: NB
 
+- **_Error Based Learning:_** What we're doing is developing a model, running it and checking our output against something then tweaking the model to reduce the error we find when we run our check.
+Example: KNN
+
+# What is Supervised Learning?
+
+- **_"Supervised learning is the machine learning task of inferring a function from labeled training data."_** ~ *Mohri 2012*
+
+- The training data consist of a set of training examples In supervised learning, each example is a pair consisting of an input object *(typically a vector)* and a desired output value *(also called the supervisory signal)*.
+
+- The goal is to find that algorithm with which you can infer the given output from the given input.
+
+```{r, echo = FALSE, out.width="50%", fig.align='center'}
+knitr::include_graphics("./pictures/supervised.png")
+```
+
+# What is Unsupervised Learning?
+
+- In unsupervised learning, we are encountering data which is not labeled like it was in supervised learning.
+
+- Usually means finding an algorithm that can be used to produce output given some un described input.
+     
+- For example, given some data we might try to find a way to cluster it in order to formulate an algorithm that describes the data in terms of that clustering.
+
+```{r, echo = FALSE, out.width="50%", fig.align='center'}
+knitr::include_graphics("./pictures/unsupervised.png")
+```
+
+# Supervised Learning 
+
+- Supervised Learning involves: 
+
+(1) Training to learn. 
+(2) A limited predictive capacity by historical nature of training data, etc. 
+
+- Techniques include: 
+
+    - statistical learning,
+    - decision tree,
+    - naives baye, 
+    - nearest neighbors, 
+    - support vector machines, 
+    - ensembles of models. 
+    
+# Unsupervised Learning 
+
+- Unsupervised learning involves:
+
+(1) Inferring based on finding structures in unlabeled data.
+(2) A limited predictive capacity by the lack of reinforcement, such as an error signal. 
+
+- Techniques include:
+
+    - clustering, 
+    - anomaly detection, 
+    - ann's.
+
+# Classical Machine Learning 
+
+The following types of problems are useful :
+
+- Classification 
+- Regression 
+- Time Series 
+- Clustering 
+
+# Classification 
+
+- Functions as its name suggests, by classifying data in order to then make predictions. 
+- Is one of the supervised learning techniques. 
+- Used for predictive modeling.
+- Uses a classification model via a learning algorithm.
+
+# Regression 
+
+# Time Series 
+
+# Clustering 
+
+# Supervised Deep Learning 
+
+We will focus on supervised learning techniques including:
+
+(1) Deep Learning using Structured Data *(Classification and Regression)*
+(2) Deep Learning using Unstructured Data
+
+- Text Classification 
+- Text Generation 
+- Image Classification
+
+We will be discussing the various types of deep learning models that there are and how to construct them including: 
+
+- Recurrent Neural Networks *(RNN)*
+- Long Short Term Memory Networks *(LSTM)*
+- Convolutional Neural Networks *(CNN)*
+- Hybrid Neural Networks *(i.e. Convolutional Long Short Term Memory Network (C-LSTM))*
+
+# Deep Learning using Structured Data 
+
+We will discuss the proper steps to modeling with structured data using deep learning for classification and regression problems. 
+
+# *(Regression)* using Deep Learning  
+
+If the problem involves data that is linear in nature and you need to predict the future value or linear **_target variable_** you most likely need a regression model. 
+
+Deep Learning is very effective at regression models and provides reliable results, but may be difficult to train effectively. 
+
+We will discuss some best practices when using deep learning to address a regression problem *(i.e. predicting the future value of the close price of an asset in the stock market.)*
+
+# *(Classification)* using Deep Learning
+
+A deep learning model designed for classification is necessary when the problem/data involves predicting the likely outcome of a **_target variables_** that is categorical in nature. 
+
+We will be discussing some best practices to design a classifier using deep learning. *(i.e. predicting the class of a type of flower from measurements of the different varieties.)* 
+
+# Deep Learning using Unstructured Data: *(Text)*
+
+There are a few options when it comes to using supervised deep learning techniques for text problems. 
+
+In this course we will focused on two methods **_text classification and text generation_**. 
+
+Each are basically a form of classification as the classifiers will simple input a text and attempt to infer the class from the recognized features, and the text generation will eseentially predict the next character of a text from the features it learns during training. 
+
+# Text Classification using Deep Learning 
+
+One of the most important steps to modeling with text is the actual reshaping of the data for the model to ingest. 
+
+We are going to discuss the appropriate steps to process your text data. 
+
+We will then discuss the steps to architect a deep learning model to classify texts *(... the purpose of the classification that a model is targeted to address is all determined by the data.)*, train the model, and test the model's performance. 
+
+# Text Generation using Deep Learning 
+
+We will discuss how to construct a deep text generation model that can train on samples texts and attempt to write its own text outputs. 
+
+We will discuss how the samples of text and how the are pre-processed and shaped may effect the overall results. 
+
+We will need to be creative in the training approach if we expect the model to become a writer like a human. 
+
+# Deep Learning using Unstructured Data *(Images)*
+
+One of the most important steps to modeling with images is the actual reshaping of the data for the model to ingest. 
+
+We are going to discuss the appropriate steps to process your text data. 
+
+We will then discuss the steps to architect a deep learning model to classify images, train the model, and test the model's performance. 
+
+# Image Classifcation using Deep Learning 
