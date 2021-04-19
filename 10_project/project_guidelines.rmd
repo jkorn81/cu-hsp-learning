@@ -1,11 +1,10 @@
 ---
 output: 
   pdf_document:
-    pandoc_args: --listings
     includes:
       in_header: preamble.tex
-title: "R and Python Learning"
-author:  "Assignment #1"
+title: "BIG DATA, MACHINE LEARNING, AND THEIR REAL WORLD APPLICATIONS"
+author:  Jonathan Wayne Korn
 date: "`r Sys.Date()`"
 
 fontfamily: mathpazo
@@ -15,9 +14,8 @@ header-includes:
    - \usepackage{fancyhdr}
    - \pagestyle{fancy}
    - \usepackage{lastpage}
-   - \usepackage{listings}
    - \fancyhead[RO,RE]{\thepage\ of \pageref{LastPage}}
-   - \fancyfoot[LO,LE]{\changefont Columbia University - BIG DATA, MACHINE LEARNING, AND THEIR REAL WORLD APPLICATIONS}
+   - \fancyfoot[LO,LE]{\changefont Project Guidelines}
 ---
 \newcommand{\changefont}{%
     \fontsize{8}{8}\selectfont
@@ -31,34 +29,45 @@ header-includes:
 \renewcommand{\headrulewidth}{0.4pt}
 \fancyfoot[C]{} 
 
-# Instructions:
+# Project Guidelines 
 
-**Step 1:** Open the rmarkdown file labeled `assign.rmd` @ [assignment1](https://github.com/jkorn81/cu-hsp-learning/tree/main/assignments/assignment1)
+For the course project we will be splitting into groups and tackling a component of research to decide whether to further develop a class voted distributed machine learning system. 
+As discussed in the course a distributed machine learning model requires that you build/train/test multiple models targeted at different tasks to address a multi-level decision/problem. 
+Each group will be tasked to develop and research a solution for that component of the distributed machine learning system. 
+As a whole we will we will vote on a problem to address as a whole, including sub-problems that require at least 4 components *(machine learning models)* to provide predictions. 
 
-**Step 2:** Revise line #3 with your name. *(... this is the yaml header in an rmarkdown file. We will discuss this more later on.)*
+The following will guide each group to tackle their component and conduct proper research to help determine if further development in the distributed system would be possible. All work should be compiled into an rmarkdown or Jupyter Labs report/presentation. 
 
-- The rmarkdown file you will be knitting will output into an htlm_document. 
+**_(1) Define the Problem_** 
 
-**Step 3:** Address the questions providing your responses in each empty code chunk.
+Define the problem and any sub-problems that may exist within the scope of the component your group is tasked to research by the class commissioning. 
+Defining the problem will help you identify possible sources of data and any potential ideas on tackling it using machine learning. 
+As a group address the following: 
 
-- Provide a response in each each question. 
-- Each response should be completed in the associated code chunk nested below the question. 
-- If the question requires a written response I want you to input a stored variable containing a string in the code chunk and print it. 
+- What is the situation, problem or challenge you are addressing for your group's component?
+- What preliminary examination leads you to believe machine learning could help?
+- Provide a thorough background for the project; e.g. about the situation, problem or challenge, etc.
 
----
+**_(2) The Data_**
 
-:::: {..lstset data-latex=""}
-**_.i.e._** 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
-example = "Here is an example of storing a variable as a string and printing it from within the code chunk."
-print(example)
-```
-:::
+After locating some potential sources of data, you should explore it to make sure it would be suitable to address the problem:
 
----
+- Give a complete description of the data your group is using in your research, including any you rejected sources/variables/etc.
+- Provide a detailed description of your data.
+- Provide any exploratory data analyses including visuals, statistical summary, and correlation analysis.
 
-**Step 4:** When you have addressed all the questions providing a response in each of the empty codie chunks you can knit the file by clicking on the `Knit` button. 
+**_(3) The Technical Development_** 
 
-*Note, a html document will generate in your working directory.*
+- Give a detailed description of the process for your entire project including importing data, pre-processing data, exploring the data, normalizing/feature engineering the data, and modeling with an evaluation of performance. 
+- Given a detailed description of your approach to the model you have proposed. You do not have to describe well known approaches themselves, *i.e. linear regression. You do have to describe how you applied the approach you when presenting the research*.
 
-**Step 5:** Submit the generated html file to the instructor. 
+**_(4) Model and Evaluate_**
+
+- Describe how you tested your approach to ensure that it is valid.
+- Discuss the validity of your approach.
+- Describe how you will evaluate your results and/or conclusions including any specific metrics, output data, completed machine learning modeling, etc.
+- Discuss the baseline you will use to compare your results.
+- Discuss how well your approach worked to address the situation or challenge, solve the problem or answer the research question.
+- Discuss any potential future work. *(i.e. if you were not able to resolve the situation or problem or answer the research question what will it take to do so? What else needs to be done?)*
+- Evaluate and report whether or not someone unfamiliar with your work could accurately replicate it.
+
