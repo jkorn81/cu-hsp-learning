@@ -1,8 +1,8 @@
 ---
 title: "Introduction to Big data"
 author: "Jonathan Wayne Korn @ Columbia University"
-date: "3/19/2021"
-output: slidy_presentation
+date: "`r Sys.Date()`"
+output: beamer_presentation
 ---
 
 # What is Big Data?
@@ -13,7 +13,7 @@ output: slidy_presentation
 
 # Basic Idea 
 
-- Behind the phrase **_'Big Data_** is tht everything we do is increasingly leaving a digital trace *(or data)*, which we *(and others)* can use/analyze. 
+- Behind the phrase **_'Big Data_** is that everything we do is increasingly leaving a digital trace *(or data)*, which we *(and others)* can use/analyze. 
 
 - Big Data therefore refers to our ability to make use of the ever-increasing volumes of data. 
 
@@ -38,7 +38,7 @@ output: slidy_presentation
 
 - It all started with emails, but nowadays most of our conversations leave a digital trail. 
 
-- Just think of all the ocnversations we have on social media sites. 
+- Just think of all the conversations we have on social media sites. 
 
 - Even many of our phone conversations are now digitally recorded. 
 
@@ -54,7 +54,7 @@ output: slidy_presentation
 
 - We are increasingly surrounded by sensors that collect and share data.
 
-- Take your smart phone, it contains a global positiining sensor to track exactly where you are every second of the day. 
+- Take your smart phone, it contains a global positioning sensor to track exactly where you are every second of the day. 
 
     - It includes an accelometer to track the speed and direction at which you are traveling. 
    
@@ -62,7 +62,7 @@ output: slidy_presentation
 
 # Internet of Things Data 
 
-- We now have smart TVs that are able to collect and process data, we have smart watches, smart fridegs, and smart alarms. 
+- We now have smart TVs that are able to collect and process data, we have smart watches, smart fridges, and smart alarms. 
 
 - The internet of Things, or Internet of Everything connects these devices so that 
 
@@ -79,27 +79,27 @@ output: slidy_presentation
 
 # Volume 
 
-- refers to the vast amounts of data geenrated every second. 
+- refers to the vast amounts of data generated every second. 
 
 - We are not talking Terabytes but Zettabytes or Bronobytes. 
 
-- If we take all the data generated in teh world between the beggining of time and 2000, the same amount of data will soon be geenrated every minute. 
+- If we take all the data generated in the world between the beginning of time and 2000, the same amount of data will soon be generated every minute. 
 
-- New bug data tools use distributed systems so that we can store and analyse the data across databases that are dotted around anywhere in the world. 
+- New bug data tools use distributed systems so that we can store and analyze the data across databases that are dotted around anywhere in the world. 
 
 # Velocity
 
-- refers to the speed at which new data is geenrated and the speed at which the data moves around. 
+- refers to the speed at which new data is generated and the speed at which the data moves around. 
 
 - Just think of social media messages going viral in seconds. 
 
-- technology allows us now to analyze the data while it is being generated *(sometimes refferred to as in memory analytics)*, without ever putting it into databases. 
+- technology allows us now to analyze the data while it is being generated *(sometimes referred to as in memory analytics)*, without ever putting it into databases. 
 
 # Variety 
 
 - refers to the different types of data we can now use. 
 
-- In the past we only focused on structured data that neatly fitted into tables or relational databses, such as financial data. 
+- In the past we only focused on structured data that neatly fitted into tables or relational databases, such as financial data. 
 
 - In fact, 80% of the world's data is unstructured *(text, images, video, voice, etc)*.
 
@@ -127,21 +127,223 @@ knitr::include_graphics("./pictures/img1.png")
 
 - The big objective, in many cases, is to create predictive models. 
 
-- Using big data, Telecom companies can now better predict customer chirn; retailers can predict what products will sell, and car insurance companies understand how well thier customers actually drive. 
+- Using big data, Telecom companies can now better predict customer churn; retailers can predict what products will sell, and car insurance companies understand how well their customers actually drive. 
 
 # Use Case Example of Big Data ~ Understand and Optimize Business Processes: 
 
-- Nig data is also increasingly used to optimize business processes. 
+- Big data is also increasingly used to optimize business processes. 
 
-- Retailers are able to optimize their stock based on prediictive models generated from *social media data, webs search trends and weather forecasts.* 
+- Retailers are able to optimize their stock based on predictive models generated from *social media data, webs search trends and weather forecasts.* 
 
-- Another example is supply chain or delivery route optimization using data from geographic positioning and redio frequency identification sensors. 
+- Another example is supply chain or delivery route optimization using data from geographic positioning and radio frequency identification sensors. 
 
 # Use Case Example of Big Data ~ Improving Health:
 
-- The computing power of big data analytics enables us to find new cures and better understand and predict diesease patterns. 
+- The computing power of big data analytics enables us to find new cures and better understand and predict disease patterns. 
 
 - We can use all the data from smart watches and wearable devices to better understand links between lifestyles and diseases. 
 
 - Big data analytics also allow us to monitor and predict epidemics and disease outbreaks, simply by listening to what people are saying, *i.e.* *"Feeling rubbish today - in bed with a cold"* or searching for on the internet, *i.e.* *"cures for flu"*. 
 
+# Some Examples of Big Data
+
+A place i think you will like is [Kaggle](https://www.kaggle.com/). 
+It provides both a source of data and code examples to work from for various problems the data fits. 
+
+- Lets take sometime to sign up a haggle account *(... we have to in order to download data.)* and browse what it has to offer. 
+
+Another place that is ripe with data for working with machine learning is the [Machine Learning Repository ~ UCI](https://archive.ics.uci.edu/ml/index.php). 
+
+- Lets see what this site has to offer and use the tool to navigate the types of data it hosts. 
+
+# What is Data?
+
+`Data` is a set of *(values/measurements)* of *(quantitative or qualitative)* variables.
+
+- It is information in a raw or unstructured form.
+
+- It can consist of fact, figure, characters, symbols, etc.
+
+- Take a look at the example below. It reflects measurements of BJ sales performance.
+
+    - Think of all the questions that could be addressed using this dataset:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+library(datasets)
+head(BJsales)
+```
+
+# Types of Measurements
+
+In data, we can distinguish two types of variables:
+
+- (1) Categorical and,
+
+- (2) Continuous
+
+# (1) - Categorical Variables
+
+**_(def)_** - entities that are divided into distinct categories.
+
+- Includes the following:
+
+    - binary variables
+    - nominal variables
+    - ordinal variables
+
+- A categorical variable can be *countries, year, gender, occupation*.
+
+- For instance in R, it stores categorical variables into a factor format.
+
+     - Factors are the variables in R which take on a limited number of different values.
+
+# Categorical Levels of Measurement - Binary
+
+**_(def):_** a binary variable is only two categories.
+
+- i.e. dead or alive.
+- i.e. gender *(female or male)*. 
+
+# Continued... Categorical Levels of Measurement - Binary
+
+- Example of a binary variable:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+gender_vector <- c("Male", "Female", "Female")
+str(gender_vector)
+```
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+factor_gender_vector <-factor(gender_vector)
+str(factor_gender_vector)
+```
+
+# Categorical Levels of Measurement - Nominal
+
+**_(def):_** A nominal variable is more than two categories.
+
+- i.e. whether someone is an omnivore, vegetarian, vegan, or fruitarian.
+
+- Example of a nominal variable:
+
+```{r}
+data = iris
+str(data$Species)
+```
+
+# Categorical Levels of Measurement - Ordinal
+
+**_(def):_** A ordinal variable is the same as a nominal, but the categories have a logical order.
+
+- i.e. whether people got a fail, a pass, a merit or a distinction in their exam.
+
+- i.e suppose you have a variable, economic status, with three categories *(low, medium and high)*.
+
+In addition to being able to classify values into categories, you can order the categories, for instance:
+
+- *(low, medium and high.)*
+
+# Continued... Categorical Levels of Measurement - Ordinal
+
+Example of a ordinal variable:
+
+```{r linewidth = 6, error = T}
+credit_scores = c(650, 700, 750, 641, 800)
+credit_status = ifelse(credit_scores<699, "low", ifelse(credit_scores<799, "med", "high"))
+credit_pt = ifelse(credit_status=="low", 1,ifelse(credit_status=="med", 2, 3))
+credit_data = data.frame(credit_scores,credit_status, credit_pt)
+credit_data[order(credit_pt),]
+```
+
+# (2) Continous Variables
+
+**_(def):_** entities get a distinct score.
+
+- Includes the following:
+
+    - interval variables
+    - ratio variables
+
+# Continous Levels of Measurement - Interval
+
+**_(def):_** A interval variable is equal intervals on the variable. It represent equal differences in the property being measured.
+
+- i.e. the difference between 6 and 8 is equivalent to the difference between 13 and 15.
+
+- i.e. What is the average precip. reading in the South West of America?
+
+# Continued... Continous Levels of Measurement - Interval
+
+- Example of a interval variable:
+
+```{r}
+library(datasets)
+precip = precip
+head(precip) 
+```
+
+# Continous Levels of Measurement - Ratio
+
+**_(def):_** A ratio variable is the same as an interval variable, but the ratios of scores on the scale must also make sense.
+
+- i.e. a score of 16 on an anxiety scale means that the person is, in reality, twice as anxious as someone scoring 8.
+
+# Continued... Continous Levels of Measurement - Ratio
+
+- Example of a ratio variable:
+
+```{r}
+library(datasets)
+trees = trees
+trees$Height
+```
+
+# Consider Measurement Error:
+
+The accuracy of the measurements are key to your solutions.
+
+- Measurement Error: - aka observational error
+
+    - **_(def):_** The discrepancy between the actual value we're trying to measure, and the number we use to represent that value.
+
+        - i.e. You (in reality) weigh 80 kg.
+        - i.e. You stand on your bathroom scales and they say 83 kg.
+        - i.e. The measurement error is 3 kg.
+
+# How Valid Are My Measures?
+
+**_Validity:_**
+
+- **_(def):_** - Whether an instrument measures what it set out to measure.
+
+    - Including the following:
+    
+        - Content validity - Evidence that the content of a test corresponds to the content of the construct it was designed to cover.
+        
+        - Ecological validity - Evidence that the study, experiment or test can be applied, and allow inferences, to real-world conditions.
+
+# Are My Measures Reliable?
+
+**_Reliability_**:
+
+- **_(def):_** The ability of the measure to produce the same results under the same conditions.
+
+**_Test-Retest Reliability:_**
+
+- **_(def):_** The ability of a measure to produce consistent results when the same entities are tested at two different points in time.
+
+# Population vs Sample
+
+First, populations and samples should be understood so that your analysis is not mis-leading when interpreting results.
+
+- **_Population_**:
+
+    - **_(def):_** includes all of the elements from a set of data.
+
+- **_Sample_**:
+
+    - **_(def):_** consists one or more observations drawn from the population.
+
+# Structured Data 
+
+# Unstructured Data
