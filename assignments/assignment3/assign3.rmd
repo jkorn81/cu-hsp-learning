@@ -1,6 +1,6 @@
 ---
-title: 'Assignment #1 - R and Python Learning'
-author: 'Answer Key'
+title: 'Assignment #3 - Exploring the Data'
+author: 'Student_Name'
 date: "4/12/2021"
 output: html_document
 ---
@@ -13,80 +13,71 @@ py_config() # locate the direct path to your
 ```
 
 **Instructions** Provide your responses to the following questions in both R and Python. 
-Follow the guidelines @  [assign1_guidelines](https://github.com/jkorn81/cu-hsp-learning/tree/main/assignments/assignment1) for more direction.
-Also, make sure to use the supporting scripts `py_learning.py` and `r_learning.r` @ [04_prepare.tools](https://github.com/jkorn81/cu-hsp-learning/tree/main/04_prepare.tools).
+Follow the guidelines @  [assign3_guidelines](https://github.com/jkorn81/cu-hsp-learning/tree/main/assignments/assignment3) for more direction.
+Also, make sure to use the supporting scripts @ [06_explore_data](https://github.com/jkorn81/cu-hsp-learning/tree/main/06_explore_data).
 
+# Visualizations 
 
-**Question #1:** Store the value 3 as `y` and the value 7 as `x`. 
-Provide your response in R in the code chunk below. 
-
-```{r}
-
-```
-
-**Question #2:** Are you able to store and print the same variables in python?
-
-```{python}
-
-```
-
-**Question #3:** Store the x and y variables in a list and print it in R. 
+**Question #1:** Create a boxplot.
 
 ```{r}
 
 ```
 
-**Question #4:** Store the x and y variables in a list and print it in Python. 
-
-```{python}
-
-```
-
-**Question #5:** Index the $2^{nd}$ value in the list you stored in your R environment.
+**Question #2:** Create a barplot.
 
 ```{r}
 
 ```
 
-**Question #6:** Index the $2^{nd}$ value in the list you stored in your Python environment.
-
-```{python}
-
-```
-
-**Question #7:** Create a square matrix containing the values $1,2,3,4$ in R. 
+**Question #3:** Create a density plot.
 
 ```{r}
 
 ```
 
-**Question #8:** Create a square matrix containing the values $1,2,3,4$ in Python. 
-
-```{python}
-
-```
-
-**Question #9:** Create a dataframe in R with the column names of `x` and `y` containing $(1,2,3)$ and $(4,5,6)$.
+**Question #4:** Create a lineplot. 
 
 ```{r}
 
 ```
 
-**Question #10:** Create a function in Python to add $x+y$ and demonstrate it works by adding $3$ and $2$.
-
-```{python}
-
-```
-
-**Question #11:** Create a loop that prints your name at least 10 times in R. 
+**Question #5:** create a historgram.
 
 ```{r}
 
 ```
 
-**Question #12:** Import the dataset [hiccups.csv](https://github.com/jkorn81/cu-hsp-learning/blob/main/data/Hiccups.csv) in R and print a structure of the data. 
+**Question #6:** Create a scatterplot.
 
 ```{r}
 
 ```
 
+**Question #7:** Create a scatterplot matrix. 
+
+```{r}
+
+```
+
+# Correlation 
+
+**Question #8:** Create a Correlation Matrix.  
+
+```{r}
+
+```
+
+**Question #9:** Create a Correlation Matrix plot.
+
+```{r}
+
+```
+
+# Statistical Summaries 
+
+**Question #10:** Create at least one statistical summary table as discussed in the course. 
+
+```{r}
+
+```

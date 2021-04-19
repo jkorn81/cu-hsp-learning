@@ -13,103 +13,236 @@ py_config() # locate the direct path to your
 ```
 
 **Instructions** Provide your responses to the following questions in both R and Python. 
-Follow the guidelines @  [assign1_guidelines](https://github.com/jkorn81/cu-hsp-learning/tree/main/assignments/assignment1) for more direction.
-Also, make sure to use the supporting scripts `py_learning.py` and `r_learning.r` @ [04_prepare.tools](https://github.com/jkorn81/cu-hsp-learning/tree/main/04_prepare.tools).
+Follow the guidelines @  [assign4_guidelines](https://github.com/jkorn81/cu-hsp-learning/tree/main/assignments/assignment4) for more direction.
+Also, make sure to use the supporting scripts @ [07_classical_ml](https://github.com/jkorn81/cu-hsp-learning/tree/main/07_classical_ml) and [08_deep_learning](https://github.com/jkorn81/cu-hsp-learning/tree/main/08_deep_learning).
 
 
-**Question #1:** Store the value 3 as `y` and the value 7 as `x`. 
-Provide your response in R in the code chunk below. 
-
-```{r}
-y = 3
-x = 7
-print(c(x,y))
-```
-
-**Question #2:** Are you able to store and print the same variables in python?
-
-```{python}
-y = 3
-x = 7
-print([y,x])
-```
-
-**Question #3:** Store the x and y variables in a list and print it in R. 
+**Question #1:** Load the `iris.csv` dataset from the course collection and build a classification model as shown in script `decision_tree.r` located in [07_classical_ml](https://github.com/jkorn81/cu-hsp-learning/tree/main/07_classical_ml). Set the target variable as `variety`.
 
 ```{r}
-list = c(x,y)
-print(list)
+library(caret)
+data("iris")
+iris = iris
+str(iris)
+index = createDataPartition(iris[,1], p =0.80, list = FALSE)
+training = iris[index,]
+valid = iris[-index,]
+dim(training)
+dim(valid)
+control <- trainControl(method="cv", number=10)
+metric <- "Accuracy"
+set.seed(7)
+fit.rpart <- train(Species~., data = training, method="rpart", metric=metric, trControl=control)
+fit.rpart
+plot(fit.rpart$finalModel, uniform=TRUE,
+     main="Classification Tree")
+text(fit.rpart$finalModel, use.n.=TRUE, all=TRUE, cex=.8)
+data.pred = predict(fit.rpart, newdata = valid)
+cm = confusionMatrix(as.factor(data.pred), reference = as.factor(valid$Species), mode = "prec_recall")
+print(cm)
 ```
 
-**Question #4:** Store the x and y variables in a list and print it in Python. 
-
-```{python}
-lst = [x,y]
-print(lst)
-```
-
-**Question #5:** Index the $2^{nd}$ value in the list you stored in your R environment.
+**Question #2:** Load the `google_estimate_v2.csv` dataset from the course collection and build a regression model as shown in script `regression.r` located in [07_classical_ml](https://github.com/jkorn81/cu-hsp-learning/tree/main/07_classical_ml). Set the target variable as `ACT_CLOSE_PRICE`. 
 
 ```{r}
-print(list[2])
-```
-
-**Question #6:** Index the $2^{nd}$ value in the list you stored in your Python environment.
-
-```{python}
-print(lst[1])
-```
-
-**Question #7:** Create a square matrix containing the values $1,2,3,4$ in R. 
-
-```{r}
-x = c(1,3)
-y = c(2,4)
-matrix = as.matrix(cbind(x,y), nrow = 2, ncol = 2) 
-print(matrix)
-```
-
-**Question #8:** Create a square matrix containing the values $1,2,3,4$ in Python. 
-
-```{python}
-import numpy as np 
-matrix = np.matrix('1 2; 3 4')
-print(matrix)
-```
-
-**Question #9:** Create a dataframe in R with the column names of `x` and `y` containing $(1,2,3)$ and $(4,5,6)$.
-
-```{r}
-x = c(1,2,3)
-y = c(4,5,6)
-data = data.frame(x,y)
-colnames(data) = c('x','y')
-data
-```
-
-**Question #10:** Create a function in Python to add $x+y$ and demonstrate it works by adding $3$ and $2$.
-
-```{python}
-def add(x, y): 
-   return x + y
-add = add(x,y) 
-print(add)
-```
-
-**Question #11:** Create a loop that prints your name at least 10 times in R. 
-
-```{r}
-name = "Jonathan"
-for (i in 1:10){
-  print(name) 
-}
-```
-
-**Question #12:** Import the dataset [hiccups.csv](https://github.com/jkorn81/cu-hsp-learning/blob/main/data/Hiccups.csv) in R and print a structure of the data. 
-
-```{r}
+library(caret)
 library(readr)
-hiccups = read_csv("C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/data/Hiccups.csv")
-str(hiccups)
+data <- read_csv("./data/google_estimates_v2.csv")
+data = data[,-c(1,2)]
+control <- trainControl(method="cv", number=10)
+metric <- "Rsquared"
+split<-createDataPartition(y = data$ACT_CLOSE_PRICE, p = 0.7, list = FALSE)
+train<-data[split,]
+valid<-data[-split,]
+set.seed(7)
+fit.LM <- train(ACT_CLOSE_PRICE~., data = train, method = "lm", trControl=control, metric=metric)
+fit.LM
+predictedValues<-predict(fit.LM, valid)
+modelvalues<-data.frame(obs = valid$ACT_CLOSE_PRICE, pred=predictedValues)
+postResample(pred = predictedValues, obs = valid$ACT_CLOSE_PRICE)
+```
+
+**Question #3:** Load the `text.csv` dataset and build/train a supervised deep learning text classifier as shown in script `dl_super_text_classification.r` located in [07_classical_ml](https://github.com/jkorn81/cu-hsp-learning/tree/main/07_classical_ml). *Remember that you may have to pre-process the text data before modeling as discussed in class and shown in script `process_text.r` [05_processing_data](https://github.com/jkorn81/cu-hsp-learning/tree/main/05_processing_data/natural_language_processing).*
+
+```{r}
+library(keras)
+library(tensorflow)
+library(xml2)
+library(dplyr)
+library(plyr)
+library(searcher)
+library(tokenizers)
+library(tm)
+library(stringr)
+library(topicmodels)
+library(doParallel)
+library(ggplot2)
+library(scales)
+library(qdapDictionaries)
+library(data.table)
+library(readtext)
+library(hunspell)
+library(ggplot2)
+library(qdap)
+library(sentimentr)
+library(readr)
+library(NLP)
+library(openNLP)
+library(openNLPmodels.en)
+library(gsubfn)
+
+data4 = data.frame(read.csv("./data/text.csv"))
+
+# Pre-process Data ----
+text = c(lapply(data4[,1], as.character))
+data.text = text[1:100]
+data.text = tolower(data.text)
+data.text = tm::removeWords(data.text, stopwords("SMART"))
+data.text = iconv(data.text, "latin1", "ASCII", sub = " ")
+data.text = gsub("^NA| NA ", " ", data.text)
+data.text = tm::removePunctuation(data.text)
+data.text = tm::removeNumbers(data.text)
+data.text = tm::stripWhitespace(data.text)
+
+merged.data = data.frame(cbind(data.text, data4[,2]))
+colnames(merged.data) = c('text','class')
+
+# Balanace Data based of Equal Sized Random Samples of the Classes ----
+split_0 = merged.data[which(merged.data$class == 0), ]
+split_1 = merged.data[which(merged.data$class == 1), ]
+min = min(c(length(split_0$class),length(split_1$class)))
+data.even = rbind(split_0[1:min,], split_1[1:min,])
+N4 =  nrow(data.even)
+ind4 = sample(N4, N4*1, replace = FALSE)
+data4 = data.even[ind4,]
+data4$text = as.character(data4$text)
+str(data4)
+
+# - [7] - Deep Modeling ----
+
+#Set parameters:
+FLAGS <- flags(
+  flag_numeric('dropout1', 0.50),
+  flag_integer('filters_cnn', 32),
+  flag_integer('filters_lstm', 32),
+  flag_numeric('batch_size', 40),
+  flag_numeric('maxlen', 2000),
+  flag_numeric('max_features', 10000),
+  flag_numeric('embedding_dim', 1000),
+  flag_numeric('leaky_relu', 0.50),
+  flag_numeric('kernel', 5),
+  flag_numeric('epochs', 10),
+  flag_numeric('pool_size', 4),
+  flag_numeric('lr', 0.002),
+  flag_numeric('val_split', 0.20)
+)
+tokenizer <- text_tokenizer(num_words = FLAGS$max_features)
+
+tokenizer %>% 
+  fit_text_tokenizer(data4$text)
+
+tokenizer$document_count
+
+#head(tokenizer$word_counts[1])
+
+
+text_seqs <- texts_to_sequences(tokenizer, data4$text)
+
+#text_seqs %>%
+#  head()
+
+#str(text_seqs)
+
+n4 = length(text_seqs)
+n5 = length(data4$class)
+
+
+#Set parameters:
+x_train <- text_seqs %>%
+  pad_sequences(maxlen = FLAGS$maxlen)
+dim(x_train)
+str(x_train)
+
+y_train <- as.matrix(data4$class)
+str(y_train)
+length(y_train)
+
+model.data = cbind(x_train, y_train)
+model.data = data.frame(model.data)
+num.col = ncol(model.data)-1
+colnames(model.data) = c(1:num.col, 'label')
+str(model.data)
+
+folds <- createFolds(y = model.data[, 'label'], k = 10, list = F)
+model.data$folds <- folds
+
+
+for(f in unique(model.data$folds)){
+  
+  cat("\n Fold: ", f)
+  ind <- which(model.data$folds == f) 
+  train_df <- model.data[-ind, -c(num.col+1, num.col+2)]
+  y_train <- as.matrix(model.data[-ind, 'label'])
+  y_train <- to_categorical(y_train)
+  valid_df <- as.matrix(model.data[ind, -c(num.col+1, num.col+2)])
+  y_valid <- as.matrix(model.data[ind, 'label'])
+  y_valid <- to_categorical(y_valid)
+  
+  model <- keras_model_sequential() %>% 
+    layer_embedding(FLAGS$max_features, FLAGS$embedding_dim, input_length = FLAGS$maxlen) %>%
+    layer_conv_1d(
+      FLAGS$filters_cnn, FLAGS$kernel, 
+      padding = "same", strides = 1L
+    ) %>%
+    layer_activation_leaky_relu(FLAGS$leaky_relu) %>%
+    layer_max_pooling_1d(FLAGS$pool_size) %>%
+    layer_batch_normalization()  %>%
+    layer_dropout(0.5) %>%
+    layer_lstm(units=FLAGS$filters_lstm) %>%
+    layer_activation_leaky_relu(FLAGS$leaky_relu) %>%
+    layer_dropout(FLAGS$leaky_relu) %>%
+    layer_dense(ncol(y_train)) %>%
+    layer_activation("sigmoid") %>% compile(
+      loss = "binary_crossentropy",
+      optimizer = optimizer_sgd(lr = FLAGS$lr),
+      metrics = "accuracy"
+    )
+  
+  
+  summary(model)
+  
+  hist <- model %>%
+    fit(
+      as.matrix(train_df), y = y_train,
+      batch_size = FLAGS$batch_size,
+      epochs = FLAGS$epochs,
+      validation_split = FLAGS$val_split,
+      callbacks = list(callback_early_stopping(patience = 10, monitor = 'val_loss', restore_best_weights = TRUE))
+    )
+  
+  print(plot(hist))
+  
+  
+  df_out <- hist$metrics %>% 
+    {data.frame(acc = .$acc[FLAGS$epochs], val_acc = .$val_acc[FLAGS$epochs])}
+  
+  print(df_out)
+  
+  score <- model %>% evaluate(valid_df, y_valid, batch_size = FLAGS$batch_size)
+  print(score)
+  
+  pred <- model %>% predict(valid_df, y_valid, batch_size = FLAGS$batch_size)
+  y_pred = round(pred)
+  print(head(y_pred))
+  
+  results = data.frame(y_valid, y_pred)
+  print(head(results))
+  
+  cm = confusionMatrix(as.factor(y_pred), reference = as.factor(y_valid), mode = "prec_recall")
+  print(cm)
+}
+
+#Save the model
+model %>% save_model_hdf5("model7.h5")
 ```
 

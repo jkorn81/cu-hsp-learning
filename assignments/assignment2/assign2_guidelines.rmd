@@ -33,7 +33,7 @@ header-includes:
 
 # Instructions:
 
-**Step 1:** Open the rmarkdown file labeled `assign.rmd` @ [assignment1](https://github.com/jkorn81/cu-hsp-learning/tree/main/assignments/assignment1)
+**Step 1:** Open the rmarkdown file labeled `assign2.rmd` @ [assignment1](https://github.com/jkorn81/cu-hsp-learning/tree/main/assignments/assignment1)
 
 **Step 2:** Revise line #3 with your name. *(... this is the yaml header in an rmarkdown file. We will discuss this more later on.)*
 
@@ -43,19 +43,6 @@ header-includes:
 
 - Provide a response in each each question. 
 - Each response should be completed in the associated code chunk nested below the question. 
-- If the question requires a written response I want you to input a stored variable containing a string in the code chunk and print it. 
-
----
-
-:::: {..lstset data-latex=""}
-**_.i.e._** 
-```{r echo=TRUE, message=FALSE, warning=FALSE}
-example = "Here is an example of storing a variable as a string and printing it from within the code chunk."
-print(example)
-```
-:::
-
----
 
 **Step 4:** When you have addressed all the questions providing a response in each of the empty codie chunks you can knit the file by clicking on the `Knit` button. 
 

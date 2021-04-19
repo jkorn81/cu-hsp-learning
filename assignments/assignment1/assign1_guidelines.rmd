@@ -33,7 +33,7 @@ header-includes:
 
 # Instructions:
 
-**Step 1:** Open the rmarkdown file labeled `assign.rmd` @ [assignment1](https://github.com/jkorn81/cu-hsp-learning/tree/main/assignments/assignment1)
+**Step 1:** Open the rmarkdown file labeled `assign1.rmd` @ [assignment1](https://github.com/jkorn81/cu-hsp-learning/tree/main/assignments/assignment1)
 
 **Step 2:** Revise line #3 with your name. *(... this is the yaml header in an rmarkdown file. We will discuss this more later on.)*
 
@@ -57,7 +57,7 @@ print(example)
 
 ---
 
-**Step 4:** When you have addressed all the questions providing a response in each of the empty codie chunks you can knit the file by clicking on the `Knit` button. 
+**Step 4:** When you have addressed all the questions providing a response in each of the empty code chunks you can knit the file by clicking on the `Knit` button. 
 
 *Note, a html document will generate in your working directory.*
 

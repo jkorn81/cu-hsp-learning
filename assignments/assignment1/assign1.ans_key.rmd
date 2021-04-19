@@ -1,7 +1,7 @@
 ---
 title: 'Assignment #1 - R and Python Learning'
 author: 'Answer Key'
-date: "4/12/2021"
+date: "`r Sys.Date()`"
 output: html_document
 ---
 
