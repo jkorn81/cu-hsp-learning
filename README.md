@@ -25,8 +25,9 @@ The repository contains the fcourse material in the following sub-folders:
 - (8) Deep Learning 
 - (9) Reporting 
 - (10) Project
-- (11) assignments
-- (12) data
-- (13) syllabus
+- (11) Assignments
+- (12) Data
+- (13) Outlines
+- (14) Syllabus
 
 Think of the repository as a tool chest containing all the bits of information and chunks of code that you need to conduct machine learning research and begin seveloping the components to a distributed machine learning system. 
