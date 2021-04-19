@@ -2,6 +2,7 @@
 library(datasets)
 data(iris)
 data = iris 
+library(caret)
 library(AppliedPredictiveModeling)
 transparentTheme(trans = .9)
 featurePlot(x = data[, 1:4], 

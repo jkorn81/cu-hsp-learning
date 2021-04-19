@@ -2,6 +2,7 @@
 library(datasets)
 data(iris)
 data = iris 
+library(caret)
 library(AppliedPredictiveModeling)
 featurePlot(x = data[, 1:4], 
             y = data$Species, 
