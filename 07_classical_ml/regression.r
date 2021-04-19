@@ -20,7 +20,7 @@ predictedValues<-predict(fit.LM, valid)
 modelvalues<-data.frame(obs = valid$Close, pred=predictedValues)
 postResample(pred = predictedValues, obs = valid$Close)
 
-# Classification ----
+# Logistic Regression for Classification ----
 library(caret)
 data("iris")
 iris = iris
@@ -36,7 +36,7 @@ data.pred = predict(fit.LR, newdata = valid)
 cm = confusionMatrix(as.factor(data.pred), reference = as.factor(valid$Species), mode = "prec_recall")
 print(cm)
 
-# Optional Method...
+## Optional Method...
 set.seed(7)
 fit.LogitBoost <- train(Species~., data = training, method="LogitBoost", metric=metric, trControl=control)
 fit.LogitBoost
