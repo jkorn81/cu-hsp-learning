@@ -78,7 +78,7 @@ Develop the *"Analytical Mindset"* and start thinking data-centric to solve real
 Students are introduced to R and Python programming language to import/export, manipulate, transform, and visualize data. 
 Also, learn to perform basic data analytics such as statistical summaries. 
 The main focus of the course is to develop students to train and evaluate machine learning models for structured classification, regression, time series and clustering problems and unstructured classification problems. 
-Learn to handle model with both structured and unstructured data using various classical machine learning algorithms and deep learning algorithms. 
+Learn to handle models with both structured and unstructured data using various supervised and unsupervised classical machine learning algorithms and deep learning algorithms. 
 Students will be also introduced to the idea of distributed machine learning systems. 
 
 
@@ -88,7 +88,7 @@ At the end of this course students will receive working knowledge in:
 
 1. an introduction into data, analytics, and the research methodology.
 
-2. an introduction into R and Python programming language with basics data analytics.
+2. an introduction into R and Python programming language with basic data analytics.
 
 3. an introduction to machine learning for structured classification, regression, time series, and cluster modeling.
 
@@ -121,12 +121,13 @@ For other program- and wellness-related needs, contact the Pre-College Program o
 
 - **_Assignment #1:_** *R and Python Programming* 
 - **_Assignment #2:_** *Processing Data*
-- **_Assignment #3:_** *Exploring the Data Visually*
+- **_Assignment #3:_** *Exploring the Data*
 - **_Assignment #4:_** *Structured and Unstructured Modeling*
+- **_Course Project:_** *Distributed Machine Learning System*
 
 **_Note:_** 
 
-- Compile the rmarkdown file labeled "assign.#.rmd.", @ https://github.com/jkorn81/cu-hsp-learning with your responses.
+- Compile the rmarkdown file labeled "assign.#.rmd.", @ [assignments](https://github.com/jkorn81/cu-hsp-learning/tree/main/assignments) with your responses.
 - Make sure to answer all of the questions in the assignment(s) before submitting them. 
 - All assignments must be knit and submitted in either the set format of html_document, word_document, or pdf_document formatting. *(you are able to change the file format that is generated from the revising the yaml in the rmarkdown file.)*
 
@@ -215,7 +216,7 @@ The course material will be posted, along with all notes and scripts created for
 ::: {.center data-latex=""}
 `r advdate(mon, 1)`
 
-**_Day 1_**
+## **_Day 1_**
 :::
 
 ---
@@ -224,7 +225,7 @@ The course material will be posted, along with all notes and scripts created for
 
 - Participate in the Getting Acquainted discussion forum before the Class Session.
 
-    - Summarize your current thoughts of machine learning for us in a sentence or two. *(... be prepared to discuss in class.)*
+    - Summarize your current thoughts on machine learning for us in a sentence or two. *(... be prepared to discuss in class.)*
 
 ---
 
@@ -232,13 +233,13 @@ The course material will be posted, along with all notes and scripts created for
 
 - Introduce instructor and summarize the course.
 - Students introductions. Tell us who you are, your background in machine learning, any specific interests that motivated you into joining the program, etc. 
-- Review the Syllabus 
+- Review the [Syllabus](https://github.com/jkorn81/cu-hsp-learning/blob/main/syllabus/syllabus.pdf) 
 
 ---
 
 **_Monday *(afternoon session ~ 1:10pm to 3:00pm)*:_**
 
-- Introduction to big data discussion. 
+- Introduction to [big data](https://github.com/jkorn81/cu-hsp-learning/tree/main/02_intro.big_data) discussion. 
 
     - Structured *(Quantitative, Qualitative)* 
 
@@ -248,7 +249,7 @@ The course material will be posted, along with all notes and scripts created for
 
 - Search the internet for potential quantitative and qualitative data sources *(include a list of at least 5 data sources, make sure to record the URL so we can locate them later on.)*.
 
-    - Note, in class we discussed a few options of data sources. 
+    - *Note, in class we discussed a few potential sources of data.* 
 
 ---
 
@@ -258,14 +259,14 @@ The course material will be posted, along with all notes and scripts created for
 ::: {.center data-latex=""}
 `r advdate(mon, 1)`
 
-**_Day 2_**
+## **_Day 2_**
 :::
 
 ---
 
 **_Tuesday *(Pre-Session Readings and Assignments)*:_**
 
-- Access the course github repo @ [cu-hsp-learning](https://github.com/jkorn81/cu-hsp-learning) to connect to the data source will be using for class. The folder is labeled `data`. 
+- Access the course github repo @ [cu-hsp-learning](https://github.com/jkorn81/cu-hsp-learning) to connect to all the data sources will be using for class @ [data](https://github.com/jkorn81/cu-hsp-learning/tree/main/data). 
 
     - Clone the repo and store the root somewhere easy to access. *(I suggest storing it on your desktop for the duration of the course.)*
 
@@ -281,12 +282,12 @@ The course material will be posted, along with all notes and scripts created for
 
 **_Tuesday *(afternoon session ~ 1:10pm to 3:00pm)*_**
 
-- Introduction to machine learning discussion. 
+- [Introduction to machine learning](https://github.com/jkorn81/cu-hsp-learning/tree/main/03_intro.machine_learning) discussion. 
 
     - Supervised vs Unsupervised Learning. 
     - Classification, Regression, Time Series and Clustering Problems. 
-    - Classical Machine Learning *(Linear Models, Decision Trees, Random Forest, Naive Bayes, Support Vector Machines, etc.)* *(sturctured data focused)*
-    - Deep Learning *(Tensorflow and Keras in Python and R)* *(image, text, and structured data focused)*
+    - [Classical Machine Learning](https://github.com/jkorn81/cu-hsp-learning/tree/main/07_classical_ml) *(Linear Models, Decision Trees, Random Forest, Naive Bayes, Support Vector Machines, etc.)* *(sturctured data focused)*
+    - [Deep Learning](https://github.com/jkorn81/cu-hsp-learning/tree/main/08_deep_learning) *(Tensorflow and Keras in Python and R)* *(image, text, and structured data focused)*
 
 --- 
 
@@ -302,14 +303,14 @@ The course material will be posted, along with all notes and scripts created for
 ::: {.center data-latex=""}
 `r advdate(mon, 1)`
 
-**_Day 3_**
+## **_Day 3_**
 :::
 
 ---
 
 **_Wednesday *(Pre-Session Readings and Assignments)*:_**
 
-- Access the supporting script(s)/file(s) in the following github repo you cloned yesterday @ [cu-hsp-learning](https://github.com/jkorn81/cu-hsp-learning) and review the documents labeled `prepare.tools.guidelines`.
+- Access the supporting script(s)/file(s) in the following github repo you cloned yesterday to prepare your tools for the course @ [04_prepare.tools](https://github.com/jkorn81/cu-hsp-learning/tree/main/04_prepare.tools) and review the document labeled [prepare_tools_guidelines](https://github.com/jkorn81/cu-hsp-learning/blob/main/04_prepare.tools/prepare_tools_guidelines.txt). *(... attempt to prepare your tools, we will be reviewing the process in class so any mistakes we can correct.)*
 
 - Watch the following video @ [R or Python: Which Should You Learn in 2020?](https://www.youtube.com/watch?v=ZGeLAqGkObw) *(19 minutes)* and learn about the iconic battle between R and Python programming languages for dominance in data science. *(Which language you think will be the winner?)* *(... be prepared to discuss in class.)*
     
@@ -317,15 +318,14 @@ The course material will be posted, along with all notes and scripts created for
 
 **_Wednesday *(morning session ~ 9:10am to 11:00am)*:_**
 
-
-- R and Python programming discussion. 
+- [R](https://github.com/jkorn81/cu-hsp-learning/blob/main/04_prepare.tools/r_learning.r) and [Python](https://github.com/jkorn81/cu-hsp-learning/blob/main/04_prepare.tools/py_learning.py) programming discussion. 
 - Preparing the Tools *(R and Python, Anaconda, Github)* 
             
-    - Importing Data:
+    - [Importing Data](https://github.com/jkorn81/cu-hsp-learning/tree/main/05_processing_data/importing_data):
     
         - Data Objects *(local/global variables, lists, vectors, matrices, dataframes)*
         - File Types *(cvs, xlsx, SAV, etc.)*
-        - APIs *(Discussion on Connecting to API)* at least one project will require to access an api *(i.e. quantmod ~ query stock data)*
+        - [APIs](https://github.com/jkorn81/cu-hsp-learning/tree/main/data/api.instructions) *(Discussion on Connecting to API)* at least one project will require to access an api *(i.e. quantmod ~ query stock data)*
 
 ---
 
@@ -333,20 +333,20 @@ The course material will be posted, along with all notes and scripts created for
 
 - Introduction to Processing Data in R and Python ~ *Structured* 
         
-    - Subset Variables 
-    - Data Type Conversions 
-    - Imputing Missing/NA Values 
-    - Imputing Outliers 
-    - Data Normalization Techniques
-    - Optional Balancing of the Data *(Randomize Sampling, Automated NoiseFilters)*
+    - [Subset Variables](https://github.com/jkorn81/cu-hsp-learning/tree/main/05_processing_data/subset_variables) 
+    - [Data Type Conversions](https://github.com/jkorn81/cu-hsp-learning/tree/main/05_processing_data/data_type_conversions)
+    - [Imputing Missing/NA Values](https://github.com/jkorn81/cu-hsp-learning/tree/main/05_processing_data/imputing_missing)
+    - [Imputing Outliers](https://github.com/jkorn81/cu-hsp-learning/tree/main/05_processing_data/imputing_outliers)
+    - [Data Normalization Techniques](https://github.com/jkorn81/cu-hsp-learning/tree/main/05_processing_data/data_normalization_techniques)
+    - [Optional Balancing of the Data](https://github.com/jkorn81/cu-hsp-learning/tree/main/05_processing_data/balance_data) *(Randomize Sampling, Automated NoiseFilters)*
 
 ---
 
 **_Wednesday *(Post-Session Readings and Assignments)*:_**
 
-- **_Assignment #1:_** *R and Python Programming* *(... be prepared to discuss in class any pitfalls you may have encountered.)*
+- Access Assignment #1 documentation @ folder labeled [assignment1](https://github.com/jkorn81/cu-hsp-learning/tree/main/assignments)
 
-    - Access Assignment #1 documentation @ folder labeled [assignment1](https://github.com/jkorn81/cu-hsp-learning/assignments)
+    - Make sure to use the support scripts for R and python @ [r_learning](https://github.com/jkorn81/cu-hsp-learning/blob/main/04_prepare.tools/r_learning.r) and [py_learning](https://github.com/jkorn81/cu-hsp-learning/blob/main/04_prepare.tools/py_learning.py)
 
 ---
 
@@ -356,7 +356,7 @@ The course material will be posted, along with all notes and scripts created for
 ::: {.center data-latex=""}
 `r advdate(mon, 1)`
 
-**_Day 4_**
+## **_Day 4_**
 :::
 
 ---
@@ -371,7 +371,7 @@ The course material will be posted, along with all notes and scripts created for
 
 - Continued... Introduction to Processing Data ~ Unstructured Data
 
-    - Discuss Natural Language Processing Techniques for Text
+    - Discuss [Natural Language Processing Techniques for Text](https://github.com/jkorn81/cu-hsp-learning/tree/main/05_processing_data/natural_language_processing)
     
 ---
 
@@ -380,17 +380,13 @@ The course material will be posted, along with all notes and scripts created for
 
 - Continued... Introduction to Processing Data ~ Unstructured Data
 
-     - Discuss Image Processing Techniques
+     - [Discuss Image Processing Techniques](https://github.com/jkorn81/cu-hsp-learning/tree/main/05_processing_data/image_processing)
 
 ---
 
 **_Thursday *(Post-Session Readings and Assignments)*:_**
 
-- Access the supporting scripts in the following github repo you cloned yesterday @ [cu-hsp-learning](https://github.com/jkorn81/cu-hsp-learning).
-
-**_Assignment #2:_** *Processing Data* *(... be prepared to discuss in class any pitfalls you may have encountered.)*
-
-    - Access Assignment #2 documentation @ folder labeled [assignment2](https://github.com/jkorn81/cu-hsp-learning/assignments)
+- Access Assignment #2 documentation @ folder labeled [assignment2](https://github.com/jkorn81/cu-hsp-learning/tree/main/assignments)
 
 ---
 
@@ -400,20 +396,16 @@ The course material will be posted, along with all notes and scripts created for
 ::: {.center data-latex=""}
 `r advdate(mon, 1)`
 
-**_Day 5_**
+## **_Day 5_**
 :::
 
 ---
 
 **_Friday *(Pre-Session Readings and Assignments)*:_**
 
-- Access the supporting scripts in the following github repo you cloned yesterday @ [cu-hsp-learning](https://github.com/jkorn81/cu-hsp-learning).
-
-    - Access '06_exploring_data'. 
+- Access [06_exploring_data](https://github.com/jkorn81/cu-hsp-learning/tree/main/06_explore_data). 
     
-         - Review the code in the script contained in the folder. 
-         
-             - Do you see any patterns in the code that are recognizable? *(... be prepared to discuss in class.)*
+    - Review the code in the script contained in the folders [correlation](https://github.com/jkorn81/cu-hsp-learning/tree/main/06_explore_data/correlation), [statistical_summaries](https://github.com/jkorn81/cu-hsp-learning/tree/main/06_explore_data/statistical_summaries), and [visualizations](https://github.com/jkorn81/cu-hsp-learning/tree/main/06_explore_data/visualizations). 
 
 ---
 
@@ -433,9 +425,7 @@ The course material will be posted, along with all notes and scripts created for
 
 **_Friday *(Post-Session Readings and Assignments)*:_**
 
-- **_Assignment #3:_** *Exploring the Data Visually*: *(... be prepared to share with the class Monday.)*
-
-    - Access Assignment #3 documentation @ folder labeled [assignment3](https://github.com/jkorn81/cu-hsp-learning/assignments)
+- Access Assignment #3 documentation @ folder labeled [assignment3](https://github.com/jkorn81/cu-hsp-learning/tree/main/assignments) *(... be prepared to share with the class Monday.)*
 
 ---
 
@@ -445,14 +435,16 @@ The course material will be posted, along with all notes and scripts created for
 ::: {.center data-latex=""}
 `r advdate(mon, 2)`
 
-**_Day 6_**
+## **_Day 6_**
 :::
 
 ---
 
 **_Monday *(Pre-Session Readings and Assignments)*:_**
 
-- Access the supporting scripts in the following github repo you cloned yesterday @ [cu-hsp-learning](https://github.com/jkorn81/cu-hsp-learning).
+- Access the supporting scripts in the following github repo you cloned yesterday @ [07_classical_ml](https://github.com/jkorn81/cu-hsp-learning/tree/main/07_classical_ml).
+
+- Send a copy of your knitted `assignment3` to the instructor before the start of the morning session.
 
 ---
 
@@ -490,14 +482,14 @@ The course material will be posted, along with all notes and scripts created for
 ::: {.center data-latex=""}
 `r advdate(mon, 2)`
 
-**_Day 7_**
+## **_Day 7_**
 :::
 
 ---
 
 **_Tuesday *(Pre-Session Readings and Assignments)*:_**
 
-- Access the supporting scripts in the following github repo you cloned yesterday @ [cu-hsp-learning](https://github.com/jkorn81/cu-hsp-learning).
+- Access the supporting scripts in the following github repo you cloned yesterday @ [08_deep_learning](https://github.com/jkorn81/cu-hsp-learning/tree/main/08_deep_learning).
 
 ---
 
@@ -519,7 +511,7 @@ The course material will be posted, along with all notes and scripts created for
 
 **_Tuesday *(Post-Session Readings and Assignments)*:_**
 
-- Prepare for tomorrow as discussed in class. 
+- Access Assignment #4 documentation @ folder labeled [assignment4](https://github.com/jkorn81/cu-hsp-learning/tree/main/assignments). 
 
 ---
 
@@ -529,14 +521,14 @@ The course material will be posted, along with all notes and scripts created for
 ::: {.center data-latex=""}
 `r advdate(mon, 2)`
 
-**_Day 8_**
+## **_Day 8_**
 :::
 
 ---
 
 **_Wednesday *(Pre-Session Readings and Assignments)*:_**
 
-- Access the supporting scripts in the following github repo you cloned yesterday @ [cu-hsp-learning](https://github.com/jkorn81/cu-hsp-learning).
+- Access the supporting scripts in the following github repo you cloned yesterday @ [08_deep_learning](https://github.com/jkorn81/cu-hsp-learning/tree/main/08_deep_learning).
 
 ---
 
@@ -558,7 +550,8 @@ The course material will be posted, along with all notes and scripts created for
 
 **_Wednesday *(Post-Session Readings and Assignments)*:_**
 
-- **_Assignment #4:_** *Structured and Unstructured*. Attempt to compile the code in the `assignments` folder @ [cu-hsp-learning](https://github.com/jkorn81/cu-hsp-learning). *(... be prepared to discuss in class any pitfalls you may have encountered.)*
+
+- Access Assignment #4 documentation @ folder labeled [assignment4](https://github.com/jkorn81/cu-hsp-learning/tree/main/assignments).
 
 ---
 
@@ -568,7 +561,7 @@ The course material will be posted, along with all notes and scripts created for
 ::: {.center data-latex=""}
 `r advdate(mon, 2)`
 
-**_Day 9_**
+## **_Day 9_**
 :::
 
 ---
@@ -581,17 +574,15 @@ The course material will be posted, along with all notes and scripts created for
 
 **_Thursday *(morning session ~ 9:10am to 11:00am)*:_** 
 
-- Class Project Discussion and Commissioning of Individual Group Components to contribute to a distributed machine learning system. 
+- Course Project Discussion and Commissioning of Individual Group Components to contribute to a distributed machine learning system. 
 - Discuss research and application ideas as a whole: 
 
-    - The problem should consist of multiple components that require machine learning to assist in the decision process.
-    - For instance, building a distributed machine learning system that consists of two layers to decide whether to buy and sell an asset. 
-    - One layer could be to predict the classification of the next days weather conditions and the second layer to predict the next day's asset price from the previous day. 
+    - The problem should consist of multiple components that require machine learning to assist in the decision process. *(i.e. building a distributed machine learning system that consists of two layers to decide whether to buy and sell an asset.)* 
     - Two machine learning models are required at minimum to support such a system. We will focus on conducting the research for the individual components on the project idea that the class agrees on. 
     - We will divide into groups who will perform the research on the selected components. 
     - Each group will present their results and the class as a whole will discuss the work. 
     
-- Review the project documentation contained in the course github repo @ https://github.com/jkorn81/cu-hsp-learning in the folder labeled `10_project`.
+- Review the project documentation contained in the course github repo @ folder labeled [10_project](https://github.com/jkorn81/cu-hsp-learning/tree/main/10_project).
 
 ---
 
@@ -619,14 +610,14 @@ The course material will be posted, along with all notes and scripts created for
 ::: {.center data-latex=""}
 `r advdate(mon, 2)`
 
-**_Day 10_**
+## **_Day 10_**
 :::
 
 ---
 
 **_Friday *(Pre-Session Readings and Assignments)*:_**
 
-- Access the supporting scripts in the following github repo you cloned yesterday @ [cu-hsp-learning](https://github.com/jkorn81/cu-hsp-learning).
+- Access the supporting scripts in the following github repo you cloned yesterday @ [09_reporting](https://github.com/jkorn81/cu-hsp-learning/tree/main/09_reporting).
 
 ---
 
@@ -664,14 +655,14 @@ The course material will be posted, along with all notes and scripts created for
 ::: {.center data-latex=""}
 `r advdate(mon, 3)`
 
-**_Day 11_**
+## **_Day 11_**
 :::
 
 ---
 
 **_Monday *(Pre-Session Readings and Assignments)*:_**
 
-- Access the supporting scripts in the following github repo you cloned yesterday @ [cu-hsp-learning](https://github.com/jkorn81/cu-hsp-learning).
+- Access the supporting scripts in the following github repo you cloned yesterday @ [10_project](https://github.com/jkorn81/cu-hsp-learning/tree/main/10_project).
 
 ---
 
@@ -682,24 +673,25 @@ The course material will be posted, along with all notes and scripts created for
 
 - Discuss the initial steps to conducting machine learning research in a group. 
 
-    - Step 1: Discuss the component of machine learning research that your group was tasked to complete. 
-    - Step 2: Set a plan for the research for an individual in your group to complete. 
-    - Step 3: Distirbute engineering tasks for portions of the code. *(I suggest breaking into sub-groups within your group so that a pair can work on one problem together.)*
-    - Step 4: Create a repo in one of the groups githubs and provide access to all group members. *(A cloud based enviroment is important to utilize in remote based work. We will use the repo to manage pushes in your groups code and also track issues throughout the development. Think of it as home base for your group to share files.)*
-    - Step 5: Each group will divide and conquer to build a component of the distributed machine learning system as comissioned by the class in a majority vote.
+    - Step 1: Delegate the goal of group. *(What is the aim for the component of the distributed machine learning system that your group was tasked?)* 
+    - Step 2: Set a plan to conduct the research. *(Each individual in your group should have defined tasks to complete to contribute to the overall goal of the group.)* and *(I suggest breaking into sub-groups within your group so that a pair can work on one problem together.)*
+    - Step 3: Create a github repo in one of the groups githubs and provide access to all group members. *(A cloud based enviroment is important to utilize in remote based work. We will use the repo to manage pushes in your groups code and also track issues throughout the development. Think of it as home base for your group to share files.)*
+    - Step 4: Each group will divide into Zoom Meetings and to build thier component of the distributed machine learning system as comissioned by the class *(in a majority vote)*. *(Make sure to share with the instructor the zoom invite link.)*
 
 ---
 
 **_Monday *(afternoon session ~ 1:10pm to 3:00pm)*:_** 
 
-- Discuss the importance of keep track of the packages/modules being utilized in the development. 
-- *Continue...* Constructing project components in groups.
+- Discuss the importance of keeping track of the [packages/modules](https://github.com/jkorn81/cu-hsp-learning/blob/main/04_prepare.tools/install.packages.r) being utilized in the development. 
+-  Construct project components in groups on the designated Zoom Meeting. 
 
 ---
 
 **_Monday *(Post-Session Readings and Assignments)*:_**
 
 - Work on your group project components. *(Make sure the tasks are divided equally among the group members.)*
+
+- To help you should make a simple text file that contains tasks for each group member to complete to accomplish the overall goal. *(... I suggest posting it on the github repo for the project, so you can track the completion of tasks with notes.)*
 
 ---
 
@@ -709,7 +701,7 @@ The course material will be posted, along with all notes and scripts created for
 ::: {.center data-latex=""}
 `r advdate(mon, 3)`
 
-**_Day 12_**
+## **_Day 12_**
 :::
 
 ---
@@ -733,7 +725,7 @@ The course material will be posted, along with all notes and scripts created for
 
 - *Continue...* Constructing project components in groups.
 
-    - Each group provide a quick presentation constructed in an rmarkdown to update the class on the group's progress.
+    - Each group provide a quick presentation constructed in an rmarkdown to update the class on the group's progress towards their goal.
 
 ---
 
@@ -749,7 +741,7 @@ The course material will be posted, along with all notes and scripts created for
 ::: {.center data-latex=""}
 `r advdate(mon, 3)`
 
-**_Day 13_**
+## **_Day 13_**
 :::
 
 ---
@@ -762,7 +754,7 @@ The course material will be posted, along with all notes and scripts created for
 
 **_Wednesday *(morning session ~ 9:10am to 11:00am)*:_** 
 
- - Compile the Group work into final presentations. 
+ - Compile the Group work into final presentations. *(I suggest using two reporting files, (1) quick presentation and (2) a detailed report such as [report example](https://github.com/jkorn81/cu-hsp-learning/blob/main/09_reporting/uml.report.rmd). Your presentation can merely reference the accompanying report allowing you to focus on the interpretation of the results.)*
 
 ---
 
@@ -774,7 +766,7 @@ The course material will be posted, along with all notes and scripts created for
 
 **_Wednesday *(Post-Session Readings and Assignments)*:_**
 
-- Prepare for tomorrow as discussed in class. 
+- Prepare for tomorrow and complete any remaining work on your group's project component and presentation. 
 
 ---
 
@@ -784,7 +776,7 @@ The course material will be posted, along with all notes and scripts created for
 ::: {.center data-latex=""}
 `r advdate(mon, 3)`
 
-**_Day 14_**
+## **_Day 14_**
 :::
 
 ---
@@ -792,6 +784,8 @@ The course material will be posted, along with all notes and scripts created for
 **_Thursday *(Pre-Session Readings and Assignments)*:_**
 
 - Access the supporting scripts in the following github repo you cloned yesterday @ [cu-hsp-learning](https://github.com/jkorn81/cu-hsp-learning).
+
+- Each group should email there presentations to the instructor before the start of the morning session. 
 
 ---
 
@@ -804,7 +798,7 @@ The course material will be posted, along with all notes and scripts created for
 **_Thursday *(afternoon session ~ 1:10pm to 3:00pm)*:_**
 
 - *Continue...* Group presentations. 
-- Determine if each groups components can be utilized to create a reliable distributed machine learning system and justifies further development. 
+- Discuss as a whole to determine if each groups components can be utilized to create a reliable distributed machine learning system and justifies further development. 
 
 ---
 

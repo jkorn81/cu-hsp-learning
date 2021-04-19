@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.9)  12 APR 2021 02:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.9)  17 APR 2021 02:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -844,8 +844,8 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.91925pt on input line 123.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 6.25204pt on input line 123.
-<C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png, id=81, 202.0
-275pt x 42.048pt>
+<C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png, id=137, 202.
+0275pt x 42.048pt>
 File: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png Graphic 
 file (type png)
 <use C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png>
@@ -862,13 +862,7 @@ e-College Pro-gram of-fice at []$hsp -[]
  []
 
 
-Underfull \hbox (badness 2189) in paragraph at lines 251--254
-[]\T1/ppl/m/n/10 Compile the rmark-down file la-beled ``as-sign.#.rmd.'', @ []$
-https : / / github . com / jkorn81 / cu -[] hsp -[]
- []
-
-
-Underfull \hbox (badness 2865) in paragraph at lines 257--261
+Underfull \hbox (badness 2865) in paragraph at lines 261--265
 []\T1/ppl/m/n/10 All as-sign-ments must be knit and sub-mit-ted in ei-ther the 
 set for-mat of html_document,
  []
@@ -877,32 +871,62 @@ File: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png Graphic
 file (type png)
 <use C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png>
 Package pdftex.def Info: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabu
-s/logo.png  used on input line 261.
+s/logo.png  used on input line 265.
 (pdftex.def)             Requested size: 164.05136pt x 34.14401pt.
 [2]
 File: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png Graphic 
 file (type png)
 <use C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png>
 Package pdftex.def Info: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabu
-s/logo.png  used on input line 340.
+s/logo.png  used on input line 344.
 (pdftex.def)             Requested size: 164.05136pt x 34.14401pt.
 [3]
 File: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png Graphic 
 file (type png)
 <use C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png>
 Package pdftex.def Info: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabu
-s/logo.png  used on input line 413.
+s/logo.png  used on input line 417.
 (pdftex.def)             Requested size: 164.05136pt x 34.14401pt.
 [4]
 File: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png Graphic 
 file (type png)
 <use C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png>
 Package pdftex.def Info: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabu
-s/logo.png  used on input line 515.
+s/logo.png  used on input line 523.
 (pdftex.def)             Requested size: 164.05136pt x 34.14401pt.
 [5]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5
-35.
+File: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png Graphic 
+file (type png)
+<use C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png>
+Package pdftex.def Info: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabu
+s/logo.png  used on input line 616.
+(pdftex.def)             Requested size: 164.05136pt x 34.14401pt.
+[6]
+File: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png Graphic 
+file (type png)
+<use C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png>
+Package pdftex.def Info: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabu
+s/logo.png  used on input line 742.
+(pdftex.def)             Requested size: 164.05136pt x 34.14401pt.
+[7]
+Overfull \vbox (2.20967pt too high) has occurred while \output is active []
+
+File: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png Graphic 
+file (type png)
+<use C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png>
+Package pdftex.def Info: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabu
+s/logo.png  used on input line 742.
+(pdftex.def)             Requested size: 164.05136pt x 34.14401pt.
+[8]
+File: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png Graphic 
+file (type png)
+<use C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png>
+Package pdftex.def Info: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabu
+s/logo.png  used on input line 897.
+(pdftex.def)             Requested size: 164.05136pt x 34.14401pt.
+[9]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 9
+19.
 
 (c:/Users/Jonathan Korn/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/t1cmt
 t.fd
@@ -912,104 +936,73 @@ File: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png Graphic
 file (type png)
 <use C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png>
 Package pdftex.def Info: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabu
-s/logo.png  used on input line 604.
-(pdftex.def)             Requested size: 164.05136pt x 34.14401pt.
-[6]
-File: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png Graphic 
-file (type png)
-<use C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png>
-Package pdftex.def Info: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabu
-s/logo.png  used on input line 714.
-(pdftex.def)             Requested size: 164.05136pt x 34.14401pt.
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 732--736
-[]\T1/ppl/m/n/10 Watch the fol-low-ing video on youtube @ []$https : / / www . 
-youtube . com / watch ? v =
- []
-
-
-Overfull \hbox (211.44475pt too wide) in paragraph at lines 788--788
-[]\T1/cmtt/m/n/10 - Access Assignment #2 documentation @ folder labeled [assign
-ment2](https://github.com/jkorn81/cu-hsp-learning/assignments) 
- []
-
-File: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png Graphic 
-file (type png)
-<use C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png>
-Package pdftex.def Info: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabu
-s/logo.png  used on input line 794.
-(pdftex.def)             Requested size: 164.05136pt x 34.14401pt.
-[8]
-File: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png Graphic 
-file (type png)
-<use C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png>
-Package pdftex.def Info: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabu
-s/logo.png  used on input line 883.
-(pdftex.def)             Requested size: 164.05136pt x 34.14401pt.
-[9]
-File: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png Graphic 
-file (type png)
-<use C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png>
-Package pdftex.def Info: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabu
-s/logo.png  used on input line 969.
+s/logo.png  used on input line 986.
 (pdftex.def)             Requested size: 164.05136pt x 34.14401pt.
 [10]
+Underfull \hbox (badness 1609) in paragraph at lines 1005--1008
+[]\T1/ppl/m/n/10 Access the sup-port-ing scripts in the fol-low-ing github repo
+ you cloned yes-ter-day @
+ []
+
 File: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png Graphic 
 file (type png)
 <use C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png>
 Package pdftex.def Info: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabu
-s/logo.png  used on input line 1039.
+s/logo.png  used on input line 1058.
 (pdftex.def)             Requested size: 164.05136pt x 34.14401pt.
 [11]
+Underfull \hbox (badness 1609) in paragraph at lines 1077--1080
+[]\T1/ppl/m/n/10 Access the sup-port-ing scripts in the fol-low-ing github repo
+ you cloned yes-ter-day @
+ []
+
 File: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png Graphic 
 file (type png)
 <use C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png>
 Package pdftex.def Info: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabu
-s/logo.png  used on input line 1116.
+s/logo.png  used on input line 1133.
 (pdftex.def)             Requested size: 164.05136pt x 34.14401pt.
 [12]
 File: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png Graphic 
 file (type png)
 <use C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png>
 Package pdftex.def Info: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabu
-s/logo.png  used on input line 1221.
+s/logo.png  used on input line 1234.
 (pdftex.def)             Requested size: 164.05136pt x 34.14401pt.
 [13]
-Overfull \vbox (7.63255pt too high) has occurred while \output is active []
-
 File: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png Graphic 
 file (type png)
 <use C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png>
 Package pdftex.def Info: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabu
-s/logo.png  used on input line 1221.
+s/logo.png  used on input line 1321.
 (pdftex.def)             Requested size: 164.05136pt x 34.14401pt.
 [14]
 File: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png Graphic 
 file (type png)
 <use C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png>
 Package pdftex.def Info: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabu
-s/logo.png  used on input line 1396.
+s/logo.png  used on input line 1419.
 (pdftex.def)             Requested size: 164.05136pt x 34.14401pt.
 [15]
 File: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png Graphic 
 file (type png)
 <use C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png>
 Package pdftex.def Info: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabu
-s/logo.png  used on input line 1468.
+s/logo.png  used on input line 1493.
 (pdftex.def)             Requested size: 164.05136pt x 34.14401pt.
 [16]
 File: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png Graphic 
 file (type png)
 <use C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png>
 Package pdftex.def Info: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabu
-s/logo.png  used on input line 1527.
+s/logo.png  used on input line 1560.
 (pdftex.def)             Requested size: 164.05136pt x 34.14401pt.
 [17]
 File: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png Graphic 
 file (type png)
 <use C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png>
 Package pdftex.def Info: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabu
-s/logo.png  used on input line 1579.
+s/logo.png  used on input line 1616.
 (pdftex.def)             Requested size: 164.05136pt x 34.14401pt.
 [18] 
 AED: lastpage setting LastPage
@@ -1017,20 +1010,20 @@ File: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png Graphic
 file (type png)
 <use C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png>
 Package pdftex.def Info: C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabu
-s/logo.png  used on input line 1580.
+s/logo.png  used on input line 1617.
 (pdftex.def)             Requested size: 164.05136pt x 34.14401pt.
 [19] (./syllabus.aux)
 Package rerunfilecheck Info: File `syllabus.out' has not changed.
-(rerunfilecheck)             Checksum: 70BBAA3C3E33551DEB62EC71D8512CDC;2542.
+(rerunfilecheck)             Checksum: EDF4905D903037927F0E42B10B485E8D;3757.
  ) 
 Here is how much of TeX's memory you used:
- 19700 strings out of 480954
- 359663 string characters out of 5905137
- 639073 words of memory out of 5000000
- 36506 multiletter control sequences out of 15000+600000
- 432936 words of font info for 91 fonts, out of 8000000 for 9000
+ 19755 strings out of 480954
+ 360116 string characters out of 5905137
+ 640727 words of memory out of 5000000
+ 36532 multiletter control sequences out of 15000+600000
+ 434532 words of font info for 93 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 86i,16n,88p,421b,476s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 86i,16n,88p,421b,555s stack positions out of 5000i,500n,10000p,200000b,80000s
  <c:/Users/Jonathan Korn/AppData/Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jk
 nappen/ec/ectt1000.600pk>{c:/Users/Jonathan Korn/AppData/Roaming/TinyTeX/texmf-
 dist/fonts/enc/dvips/base/8r.enc}<c:/Users/Jonathan Korn/AppData/Roaming/TinyTe
@@ -1039,10 +1032,10 @@ a/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb><c:/Users/Jon
 athan Korn/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplr8a.p
 fb><c:/Users/Jonathan Korn/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/p
 alatino/uplri8a.pfb>
-Output written on syllabus.pdf (19 pages, 166943 bytes).
+Output written on syllabus.pdf (19 pages, 164212 bytes).
 PDF statistics:
- 331 PDF objects out of 1000 (max. 8388607)
- 265 compressed objects within 3 object streams
- 63 named destinations out of 1000 (max. 500000)
- 162 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 401 PDF objects out of 1000 (max. 8388607)
+ 361 compressed objects within 4 object streams
+ 91 named destinations out of 1000 (max. 500000)
+ 274 words of extra memory for PDF output out of 10000 (max. 10000000)
 
