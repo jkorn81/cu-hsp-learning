@@ -1,12 +1,12 @@
 ---
-title: Researching Countries Mobility Rate during COVID-19 using Machine Learning 
+title: Machine Learning Sample
   Learning
 author: "HU - J.Korn"
-date: "April 4, 2020"
+date: "`r Sys.Date()`"
 output: html_document
 ---
 ```{r message=FALSE, warning=FALSE, include=FALSE}
-setwd("C:/Users/jonat/Desktop/hu.projects/project.covid-19.google")
+setwd("C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/09_reporting")
 ```
 
 ## Load Libraries, Import Data, and Correlation {.tabset}
@@ -18,6 +18,7 @@ library(caret)
 library(rattle)
 library(party)
 library(ggpubr)
+library(quantmod)
 ```
 
 Here is the list of all the required libraries. 
@@ -25,13 +26,17 @@ Download all the libraries before running the code.
 
 ### Import Data 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-data <- read_excel("Modeling/NewData[v1].xlsx")
+start <- as.Date(Sys.Date()-(365*5)) # start date. 
+end <- as.Date(Sys.Date()) # current date. 
+getSymbols("GOOG", src = "yahoo", from = start, to = end) # Feed symbol from s&p500. 
+data = data.frame(GOOG) # call xts object into env. 
+colnames(data) = c("Open", "High", "Low", "Close", "Volume", "Adjusted") # set column names in xts object. 
 str(data)
 ```
 
 ### Remove Unnecessary Variables 
 ```{r}
-dataset = data[,-c(1,2,3,4,6,7,8,10,11,21)]
+dataset = data[,-c(5,6)]
 str(dataset)
 ```
 
@@ -65,9 +70,9 @@ set.seed(7)
 
 ```{r echo=TRUE, message=FALSE, warning=FALSE}
 set.seed(7)
-fit.OLS <- train(retail~., data = dataset, method="lm", metric=metric, trControl=control) #OLS
+fit.OLS <- train(Close~., data = dataset, method="lm", metric=metric, trControl=control) #OLS
 set.seed(7)
-fit.rf <- train(retail~., data = dataset, method="rf", metric=metric, trControl=control, #random forest 
+fit.rf <- train(Close~., data = dataset, method="rf", metric=metric, trControl=control, #random forest 
                importance=T)
 ```
 
@@ -104,8 +109,8 @@ print(fit.OLS$resample)
 
 ### Predictions Results 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-predictions = predict(fit.OLS, dataset[,-1])
-postResample(pred = predictions, obs = dataset$retail)
+predictions = predict(fit.OLS, dataset[,-4])
+postResample(pred = predictions, obs = dataset$Close)
 ```
 
 ### Variable Importance
@@ -139,8 +144,8 @@ print(fit.rf$resample)
 ### Predictions
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 #Estimate Skill of a model using the Validation Set
-predictions = predict(fit.rf, dataset[,-1])
-postResample(pred = predictions, obs = dataset$retail)
+predictions = predict(fit.rf, dataset[,-4])
+postResample(pred = predictions, obs = dataset$Close)
 ```
 
 ### Variable Importance
@@ -158,7 +163,7 @@ vi.rf
 
 ### Train on Significant Variables
 ```{r echo=TRUE, message=FALSE, warning=FALSE}
-fit.OLS.r <- train(retail~teenpregnancyrate+work+under25, data = dataset, method="lm", metric=metric, trControl=control, #random forest 
+fit.OLS.r <- train(Close~High+Low, data = dataset, method="lm", metric=metric, trControl=control, #random forest 
                importance=T)
 ```
 
@@ -180,8 +185,8 @@ print(fit.OLS.r$resample)
 ### Predictions
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 #Estimate Skill of a model using the Validation Set
-predictions = predict(fit.OLS.r, dataset[,-1])
-postResample(pred = predictions, obs = dataset$retail)
+predictions = predict(fit.OLS.r, dataset[,-4])
+postResample(pred = predictions, obs = dataset$Close)
 ```
 
 ### Variable Importance
@@ -197,7 +202,7 @@ vi.OLS.r
 
 ### Training on the Whole Dataset
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-lm = coef(lm(retail~teenpregnancyrate+work+under25, data = dataset)) #Same as running using caret with no control parameters...
+lm = coef(lm(Close~High + Low, data = dataset)) #Same as running using caret with no control parameters...
 summary(lm)
 ```
 
@@ -213,7 +218,7 @@ fmp.4 = plot(fit.OLS.r$finalModel,4)
 
 ### Train on Significant Variables
 ```{r echo=TRUE, message=FALSE, warning=FALSE}
-fit.rf.r <- train(retail~teenpregnancyrate+work+under25, data = dataset, method="rf", metric=metric, trControl=control, #random forest 
+fit.rf.r <- train(Close~High + Low, data = dataset, method="rf", metric=metric, trControl=control, #random forest 
                importance=T)
 ```
 
@@ -235,8 +240,8 @@ print(fit.rf.r$resample)
 ### Predictions 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 #Estimate Skill of a model using the Validation Set
-predictions = predict(fit.rf.r, dataset[,-1])
-postResample(pred = predictions, obs = dataset$retail)
+predictions = predict(fit.rf.r, dataset[,-4])
+postResample(pred = predictions, obs = dataset$Close)
 ```
 
 ### Variable Importance
