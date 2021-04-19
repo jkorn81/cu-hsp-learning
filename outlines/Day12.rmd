@@ -1,0 +1,55 @@
+---
+output: 
+  pdf_document:
+    includes:
+      in_header: preamble.tex
+title: "BIG DATA, MACHINE LEARNING, AND THEIR REAL WORLD APPLICATIONS"
+author:  Jonathan Wayne Korn
+date: "`r Sys.Date()`"
+
+fontfamily: mathpazo
+fontsize: 10pt
+header-includes:
+   - \linespread{1.05}
+   - \usepackage{fancyhdr}
+   - \pagestyle{fancy}
+   - \usepackage{lastpage}
+   - \fancyhead[RO,RE]{\thepage\ of \pageref{LastPage}}
+   - \fancyfoot[LO,LE]{\changefont Day 12 Outline}
+---
+\newcommand{\changefont}{%
+    \fontsize{8}{8}\selectfont
+}
+\addtolength{\headheight}{1.0cm} 
+\pagestyle{fancyplain} 
+\rhead{\thepage\ of \pageref{LastPage}}
+\lhead{\includegraphics[height=1.2cm]{C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo}} 
+\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyfoot[C]{} 
+
+# Outline 
+
+Week 03, 07/12 - 07/18, Day 12
+
+**_Tuesday *(Pre-Session Readings and Assignments)*:_**
+
+- Access the supporting scripts in the following github repo you cloned yesterday @ [cu-hsp-learning](https://github.com/jkorn81/cu-hsp-learning).
+
+     - Work on your group project components.
+
+**_Tuesday *(morning session ~ 9:10am to 11:00am)*:_** 
+
+- Discuss working on the ReadME.md file on the group repos so that the components of the project can be easily explained to external parties. 
+- *Continue...* Constructing project components in groups. 
+
+**_Tuesday *(afternoon session ~ 1:10pm to 3:00pm)*:_** 
+
+- *Continue...* Constructing project components in groups.
+
+    - Each group provide a quick presentation constructed in an rmarkdown to update the class on the group's progress towards their goal.
+
+**_Tuesday *(Post-Session Readings and Assignments)*:_**
+
+- Prepare for tomorrow as discussed in class. 

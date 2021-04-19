@@ -1,0 +1,60 @@
+---
+output: 
+  pdf_document:
+    includes:
+      in_header: preamble.tex
+title: "BIG DATA, MACHINE LEARNING, AND THEIR REAL WORLD APPLICATIONS"
+author:  Jonathan Wayne Korn
+date: "`r Sys.Date()`"
+
+fontfamily: mathpazo
+fontsize: 10pt
+header-includes:
+   - \linespread{1.05}
+   - \usepackage{fancyhdr}
+   - \pagestyle{fancy}
+   - \usepackage{lastpage}
+   - \fancyhead[RO,RE]{\thepage\ of \pageref{LastPage}}
+   - \fancyfoot[LO,LE]{\changefont Day 10 Outline}
+---
+\newcommand{\changefont}{%
+    \fontsize{8}{8}\selectfont
+}
+\addtolength{\headheight}{1.0cm} 
+\pagestyle{fancyplain} 
+\rhead{\thepage\ of \pageref{LastPage}}
+\lhead{\includegraphics[height=1.2cm]{C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo}} 
+\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyfoot[C]{} 
+
+# Outline 
+
+Week 02, 07/05 - 07/11, Day 10
+
+**_Friday *(Pre-Session Readings and Assignments)*:_**
+
+- Access the supporting scripts in the following github repo you cloned yesterday @ [09_reporting](https://github.com/jkorn81/cu-hsp-learning/tree/main/09_reporting).
+
+**_Friday *(morning session ~ 9:10am to 11:00am)*:_** 
+
+- *Continue...* Reporting Techniques 
+
+    - *(Rmarkdown)* 
+    
+        - Create Rmarkdown generated documents in pdf, html, word format.
+        - Create Rmarkdown presentations in pdf, html (ioslides, slidy), or powerpoint format.
+
+**_Friday *(afternoon session ~ 1:10pm to 3:00pm)*:_** 
+
+- *Continue...* Reporting Techniques 
+
+    - *(tfruns and Jupyter Notebooks)*
+     
+       - Create reports in Jupyter Notebooks. 
+       - Use tfruns to automate reporting. 
+
+**_Friday *(Post-Session Readings and Assignments)*:_**
+
+- Create a presentation using one of the reporting techniques discussed in class. *(I suggest making a presentation containing your project ideas.)*

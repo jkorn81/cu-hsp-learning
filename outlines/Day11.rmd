@@ -1,0 +1,61 @@
+---
+output: 
+  pdf_document:
+    includes:
+      in_header: preamble.tex
+title: "BIG DATA, MACHINE LEARNING, AND THEIR REAL WORLD APPLICATIONS"
+author:  Jonathan Wayne Korn
+date: "`r Sys.Date()`"
+
+fontfamily: mathpazo
+fontsize: 10pt
+header-includes:
+   - \linespread{1.05}
+   - \usepackage{fancyhdr}
+   - \pagestyle{fancy}
+   - \usepackage{lastpage}
+   - \fancyhead[RO,RE]{\thepage\ of \pageref{LastPage}}
+   - \fancyfoot[LO,LE]{\changefont Day 11 Outline}
+---
+\newcommand{\changefont}{%
+    \fontsize{8}{8}\selectfont
+}
+\addtolength{\headheight}{1.0cm} 
+\pagestyle{fancyplain} 
+\rhead{\thepage\ of \pageref{LastPage}}
+\lhead{\includegraphics[height=1.2cm]{C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo}} 
+\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyfoot[C]{} 
+
+# Outline 
+
+Week 03, 07/12 - 07/18, Day 11
+
+**_Monday *(Pre-Session Readings and Assignments)*:_**
+
+- Access the supporting scripts in the following github repo you cloned yesterday @ [10_project](https://github.com/jkorn81/cu-hsp-learning/tree/main/10_project).
+
+**_Monday *(morning session ~ 9:10am to 11:00am)*:_**
+
+
+- Final Commission of the project and initial construction of the project components. 
+
+- Discuss the initial steps to conducting machine learning research in a group. 
+
+    - Step 1: Delegate the goal of group. *(What is the aim for the component of the distributed machine learning system that your group was tasked?)* 
+    - Step 2: Set a plan to conduct the research. *(Each individual in your group should have defined tasks to complete to contribute to the overall goal of the group.)* and *(I suggest breaking into sub-groups within your group so that a pair can work on one problem together.)*
+    - Step 3: Create a github repo in one of the groups githubs and provide access to all group members. *(A cloud based enviroment is important to utilize in remote based work. We will use the repo to manage pushes in your groups code and also track issues throughout the development. Think of it as home base for your group to share files.)*
+    - Step 4: Each group will divide into Zoom Meetings and to build thier component of the distributed machine learning system as comissioned by the class *(in a majority vote)*. *(Make sure to share with the instructor the zoom invite link.)*
+
+**_Monday *(afternoon session ~ 1:10pm to 3:00pm)*:_** 
+
+- Discuss the importance of keeping track of the [packages/modules](https://github.com/jkorn81/cu-hsp-learning/blob/main/04_prepare.tools/install.packages.r) being utilized in the development. 
+-  Construct project components in groups on the designated Zoom Meeting. 
+
+**_Monday *(Post-Session Readings and Assignments)*:_**
+
+- Work on your group project components. *(Make sure the tasks are divided equally among the group members.)*
+
+- To help you should make a simple text file that contains tasks for each group member to complete to accomplish the overall goal. *(... I suggest posting it on the github repo for the project, so you can track the completion of tasks with notes.)*

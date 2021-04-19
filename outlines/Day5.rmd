@@ -1,0 +1,54 @@
+---
+output: 
+  pdf_document:
+    includes:
+      in_header: preamble.tex
+title: "BIG DATA, MACHINE LEARNING, AND THEIR REAL WORLD APPLICATIONS"
+author:  Jonathan Wayne Korn
+date: "`r Sys.Date()`"
+
+fontfamily: mathpazo
+fontsize: 10pt
+header-includes:
+   - \linespread{1.05}
+   - \usepackage{fancyhdr}
+   - \pagestyle{fancy}
+   - \usepackage{lastpage}
+   - \fancyhead[RO,RE]{\thepage\ of \pageref{LastPage}}
+   - \fancyfoot[LO,LE]{\changefont Day 5 Outline}
+---
+\newcommand{\changefont}{%
+    \fontsize{8}{8}\selectfont
+}
+\addtolength{\headheight}{1.0cm} 
+\pagestyle{fancyplain} 
+\rhead{\thepage\ of \pageref{LastPage}}
+\lhead{\includegraphics[height=1.2cm]{C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo}} 
+\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyfoot[C]{} 
+# Outline 
+
+Week 01, 06/28 - 07/04, Day 5
+
+
+**_Friday *(Pre-Session Readings and Assignments)*:_**
+
+- Access [06_exploring_data](https://github.com/jkorn81/cu-hsp-learning/tree/main/06_explore_data). 
+    
+    - Review the code in the script contained in the folders [correlation](https://github.com/jkorn81/cu-hsp-learning/tree/main/06_explore_data/correlation), [statistical_summaries](https://github.com/jkorn81/cu-hsp-learning/tree/main/06_explore_data/statistical_summaries), and [visualizations](https://github.com/jkorn81/cu-hsp-learning/tree/main/06_explore_data/visualizations). 
+
+**_Friday *(morning session ~ 9:10am to 11:00am)*:_** 
+
+- Overview of Exploring the Data using Basic Data Analysis Techniques.
+
+**_Friday *(afternoon session ~ 1:10pm to 3:00pm)*:_** 
+
+- Continued... Overview of Exploring the Data using Basic Data Analysis Techniques.
+
+    - Lets create some plots and store them in a particular folder in /.jpg or /.png file format. *(We can use the plots later on to compile into a report.)* 
+
+**_Friday *(Post-Session Readings and Assignments)*:_**
+
+- Access Assignment #3 documentation @ folder labeled [assignment3](https://github.com/jkorn81/cu-hsp-learning/tree/main/assignments) *(... be prepared to share with the class Monday.)*

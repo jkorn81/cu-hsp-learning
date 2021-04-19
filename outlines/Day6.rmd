@@ -1,0 +1,61 @@
+---
+output: 
+  pdf_document:
+    includes:
+      in_header: preamble.tex
+title: "BIG DATA, MACHINE LEARNING, AND THEIR REAL WORLD APPLICATIONS"
+author:  Jonathan Wayne Korn
+date: "`r Sys.Date()`"
+
+fontfamily: mathpazo
+fontsize: 10pt
+header-includes:
+   - \linespread{1.05}
+   - \usepackage{fancyhdr}
+   - \pagestyle{fancy}
+   - \usepackage{lastpage}
+   - \fancyhead[RO,RE]{\thepage\ of \pageref{LastPage}}
+   - \fancyfoot[LO,LE]{\changefont Day 6 Outline}
+---
+\newcommand{\changefont}{%
+    \fontsize{8}{8}\selectfont
+}
+\addtolength{\headheight}{1.0cm} 
+\pagestyle{fancyplain} 
+\rhead{\thepage\ of \pageref{LastPage}}
+\lhead{\includegraphics[height=1.2cm]{C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo}} 
+\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyfoot[C]{} 
+# Outline 
+
+Week 02, 07/05 - 07/11, Day 6
+
+**_Monday *(Pre-Session Readings and Assignments)*:_**
+
+- Access the supporting scripts in the following github repo you cloned yesterday @ [07_classical_ml](https://github.com/jkorn81/cu-hsp-learning/tree/main/07_classical_ml).
+
+- Send a copy of your knitted `assignment3` to the instructor before the start of the morning session.
+
+**_Monday *(morning session ~ 9:10am to 11:00am)*:_** 
+
+- Application and Reporting of Classical Machine Learning Algorithms for Supervised Problems using Structured Data
+
+    - Architect and train supervised classification and regression *(time series)* models in R and Python.
+    
+        - Evaluate the performance of the trained model states.
+        - Discuss Use Cases for Potential Machine Learning Project Ideas.
+
+**_Monday *(afternoon session ~ 1:10pm to 3:00pm)*:_** 
+
+- Application and Reporting of Classical Machine Learning Algorithms for Unsupervised Problems using Structured Data
+ 
+    - Architect and train unsupervised classification models in R and Python.
+    
+        - Evaluate the performance of the trained model states.
+        - Discuss Use Cases for Potential Machine Learning Project Ideas.
+
+**_Monday *(Post-Session Readings and Assignments)*:_**
+
+- Prepare for tomorrow as discussed in class. 

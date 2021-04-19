@@ -1,0 +1,64 @@
+---
+output: 
+  pdf_document:
+    includes:
+      in_header: preamble.tex
+title: "BIG DATA, MACHINE LEARNING, AND THEIR REAL WORLD APPLICATIONS"
+author:  Jonathan Wayne Korn
+date: "`r Sys.Date()`"
+
+fontfamily: mathpazo
+fontsize: 10pt
+header-includes:
+   - \linespread{1.05}
+   - \usepackage{fancyhdr}
+   - \pagestyle{fancy}
+   - \usepackage{lastpage}
+   - \fancyhead[RO,RE]{\thepage\ of \pageref{LastPage}}
+   - \fancyfoot[LO,LE]{\changefont Day 9 Outline}
+---
+\newcommand{\changefont}{%
+    \fontsize{8}{8}\selectfont
+}
+\addtolength{\headheight}{1.0cm} 
+\pagestyle{fancyplain} 
+\rhead{\thepage\ of \pageref{LastPage}}
+\lhead{\includegraphics[height=1.2cm]{C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo}} 
+\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyfoot[C]{} 
+
+# Outline 
+
+Week 02, 07/05 - 07/11, Day 9
+
+**_Thursday *(Pre-Session Readings and Assignments)*:_**
+
+- Prepare for class by individually writing down ideas for projects that can be conducted using some of the machine learning and deep learning techniques we discussed so far. *(... at least think of 3 solutions that can be developed)* 
+
+**_Thursday *(morning session ~ 9:10am to 11:00am)*:_** 
+
+- Course Project Discussion and Commissioning of Individual Group Components to contribute to a distributed machine learning system. 
+- Discuss research and application ideas as a whole: 
+
+    - The problem should consist of multiple components that require machine learning to assist in the decision process. *(i.e. building a distributed machine learning system that consists of two layers to decide whether to buy and sell an asset.)* 
+    - Two machine learning models are required at minimum to support such a system. We will focus on conducting the research for the individual components on the project idea that the class agrees on. 
+    - We will divide into groups who will perform the research on the selected components. 
+    - Each group will present their results and the class as a whole will discuss the work. 
+    
+- Review the project documentation contained in the course github repo @ folder labeled [10_project](https://github.com/jkorn81/cu-hsp-learning/tree/main/10_project).
+
+**_Thursday *(afternoon session ~ 1:10pm to 3:00pm)*:_** 
+
+- Reporting Techniques:
+
+    - *(Github)*
+    
+        - Create an account. 
+        - Create a repository *(repo)* for your course work and load any file you would like. 
+        - We will discuss best practices for managing your repos. 
+
+**_Thursday *(Post-Session Readings and Assignments)*:_**
+
+- Keep writing down ideas that you'd like to pitch to the class and associate those ideas with a neat project name.

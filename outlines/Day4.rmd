@@ -1,0 +1,55 @@
+---
+output: 
+  pdf_document:
+    includes:
+      in_header: preamble.tex
+title: "BIG DATA, MACHINE LEARNING, AND THEIR REAL WORLD APPLICATIONS"
+author:  Jonathan Wayne Korn
+date: "`r Sys.Date()`"
+
+fontfamily: mathpazo
+fontsize: 10pt
+header-includes:
+   - \linespread{1.05}
+   - \usepackage{fancyhdr}
+   - \pagestyle{fancy}
+   - \usepackage{lastpage}
+   - \fancyhead[RO,RE]{\thepage\ of \pageref{LastPage}}
+   - \fancyfoot[LO,LE]{\changefont Day 4 Outline}
+---
+\newcommand{\changefont}{%
+    \fontsize{8}{8}\selectfont
+}
+\addtolength{\headheight}{1.0cm} 
+\pagestyle{fancyplain} 
+\rhead{\thepage\ of \pageref{LastPage}}
+\lhead{\includegraphics[height=1.2cm]{C:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo}} 
+\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyfoot[C]{} 
+# Outline 
+
+Week 01, 06/28 - 07/04, Day 4
+
+**_Thursday *(Pre-Session Readings and Assignments)*:_**
+
+- Watch the following video on youtube @ [The Basics of Natural Language Processing](https://www.youtube.com/watch?v=d4gGtcobq8M) *(4 minutes 10 seconds)* and *(... be prepared to discuss in class your thoughts on some use cases for natural language processing and its importance to machine learning.)*
+
+
+**_Thursday *(morning session ~ 9:10am to 11:00am)*:_**
+
+- Continued... Introduction to Processing Data ~ Unstructured Data
+
+    - Discuss [Natural Language Processing Techniques for Text](https://github.com/jkorn81/cu-hsp-learning/tree/main/05_processing_data/natural_language_processing)
+    
+**_Thursday *(afternoon session ~ 1:10pm to 3:00pm)*:_** 
+
+
+- Continued... Introduction to Processing Data ~ Unstructured Data
+
+     - [Discuss Image Processing Techniques](https://github.com/jkorn81/cu-hsp-learning/tree/main/05_processing_data/image_processing)
+
+**_Thursday *(Post-Session Readings and Assignments)*:_**
+
+- Access Assignment #2 documentation @ folder labeled [assignment2](https://github.com/jkorn81/cu-hsp-learning/tree/main/assignments)
