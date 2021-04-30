@@ -117,16 +117,31 @@ The following types of problems are useful :
 
 # Classification 
 
-- Functions as its name suggests, by classifying data in order to then make predictions. 
-- Is one of the supervised learning techniques. 
-- Used for predictive modeling.
-- Uses a classification model via a learning algorithm.
+A classification problem is defined by the target or target variables. 
+If the target variable is categorical in nature than it is a classification problem. 
+Think of categorical as groupings and classification as the act of assigning the correct grouping. 
+In these cases, you could face either a binary or multiple classification problems.
+Classification models are very useful to use on problems that involve a decision based on a certain set of input(s). 
+Refer to section titled **_Example of Classification Problem using `EzML`_** for an example of how to conduct a classification model. 
 
 # Regression 
 
+In a regression problem the target variable is linear in nature. 
+The predictive purpose of regression is to predict the linear trend of a target variable from an input or inputs. 
+Refer to section titled **_Example of Regression Problem using `EzML`_** for an example of how to conduct a regression model.
+
 # Time Series 
 
+Times series problems are regression problems with a time element. 
+However, it should be known that times series models may be classification type problems if each time stamp requires a time based prediction or even a combination of the two. 
+Many time series solutions actually use a distributed machine learning system that provides both a classification and regression prediction for the future time period. 
+Refer to section titled **_Example of Time Series Problem using `EzML`_** for an example of how to conduct a time series model.
+
 # Clustering 
+
+Clustering problems are classification problems, however, there is no target variable hence we are dealing with unsupervised technique. 
+The model will attempt to use optimized linear techniques to cluster inputs into groupings based on their relationships. 
+Different models utilize various optimized techniqtues and linear methods to group the inputs and associate the relationships. 
 
 # Supervised Deep Learning 
 
@@ -197,3 +212,9 @@ We are going to discuss the appropriate steps to process your text data.
 We will then discuss the steps to architect a deep learning model to classify images, train the model, and test the model's performance. 
 
 # Image Classifcation using Deep Learning 
+
+We will discuss how to construct a deep image classifier model that can train on samples images and attempt to classify its own outputs. 
+
+We will discuss how the samples of images and how they are pre-processed and shaped may effect the overall results. 
+
+We will need to be creative in the training approach if we expect the model to become a successful image classifier.
