@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Big data"
+title: "Introduction to Big Data"
 author: "Jonathan Wayne Korn @ Columbia University"
 date: "`r Sys.Date()`"
 output: beamer_presentation
@@ -346,4 +346,9 @@ First, populations and samples should be understood so that your analysis is not
 
 # Structured Data 
 
+When you think of sturtcured data think of organized formatted data in tables, lists, etc. 
+
 # Unstructured Data
+
+When you think of unstructured data you should think of any data sources that is not in a table, list, etc. 
+Typically the data is either text or images as will discuss in the course. 
