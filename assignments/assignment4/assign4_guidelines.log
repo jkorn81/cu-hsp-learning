@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.9)  30 APR 2021 18:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.9)  30 APR 2021 18:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**assign1_guidelines.tex
-(./assign1_guidelines.tex
+**assign4_guidelines.tex
+(./assign4_guidelines.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18>
 (c:/Users/Jonathan Korn/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/artic
@@ -713,8 +713,8 @@ l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count302
 \l__pdf_internal_box=\box66
-) (./assign1_guidelines.aux)
-\openout1 = `assign1_guidelines.aux'.
+) (./assign4_guidelines.aux)
+\openout1 = `assign4_guidelines.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
 LaTeX Font Info:    ... okay on input line 94.
@@ -765,9 +765,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 94.
 LaTeX Info: Redefining \pageref on input line 94.
 LaTeX Info: Redefining \nameref on input line 94.
-(./assign1_guidelines.out) (./assign1_guidelines.out)
+(./assign4_guidelines.out) (./assign4_guidelines.out)
 \@outlinefile=\write6
-\openout6 = `assign1_guidelines.out'.
+\openout6 = `assign4_guidelines.out'.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -885,15 +885,15 @@ s/logo.png  used on input line 167.
 [1{c:/Users/Jonathan Korn/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/up
 dmap/pdftex.map}
 
- <c:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png>] (./assign1
+ <c:/Users/Jonathan Korn/Desktop/cu_hsp-learning/syllabus/logo.png>] (./assign4
 _guidelines.aux)
-Package rerunfilecheck Info: File `assign1_guidelines.out' has not changed.
+Package rerunfilecheck Info: File `assign4_guidelines.out' has not changed.
 (rerunfilecheck)             Checksum: C7B7C38A56609A993A260E1B2504A54E;109.
  ) 
 Here is how much of TeX's memory you used:
  21840 strings out of 480954
  385904 string characters out of 5905137
- 882712 words of memory out of 5000000
+ 882801 words of memory out of 5000000
  38683 multiletter control sequences out of 15000+600000
  424280 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -904,7 +904,7 @@ se/8r.enc}<c:/Users/Jonathan Korn/AppData/Roaming/TinyTeX/texmf-dist/fonts/type
 -dist/fonts/type1/urw/palatino/uplbi8a.pfb><c:/Users/Jonathan Korn/AppData/Roam
 ing/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/Users/Jonathan K
 orn/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on assign1_guidelines.pdf (1 page, 89963 bytes).
+Output written on assign4_guidelines.pdf (1 page, 90055 bytes).
 PDF statistics:
  51 PDF objects out of 1000 (max. 8388607)
  41 compressed objects within 1 object stream

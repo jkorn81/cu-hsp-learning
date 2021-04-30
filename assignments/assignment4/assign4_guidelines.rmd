@@ -4,8 +4,8 @@ output:
     pandoc_args: --listings
     includes:
       in_header: preamble.tex
-title: "R and Python Learning"
-author:  "Assignment #1"
+title: "Structured and Unstructured Modeling"
+author:  "Assignment #4"
 date: "`r Sys.Date()`"
 
 fontfamily: mathpazo
@@ -33,7 +33,7 @@ header-includes:
 
 # Instructions:
 
-**Step 1:** Open the rmarkdown file labeled `assign.rmd` @ [assignment1](https://github.com/jkorn81/cu-hsp-learning/tree/main/assignments/assignment1)
+**Step 1:** Open the rmarkdown file labeled `assign.rmd` @ [assignment4](https://github.com/jkorn81/cu-hsp-learning/tree/main/assignments/assignment4)
 
 **Step 2:** Revise line #3 with your name. *(... this is the yaml header in an rmarkdown file. We will discuss this more later on.)*
 
