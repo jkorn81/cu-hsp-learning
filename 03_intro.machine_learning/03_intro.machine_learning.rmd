@@ -7,7 +7,7 @@ output: beamer_presentation
 
 # Introduction to Machine Learning
 
-We have to ask ourselves a fundamental question regarding the idea of a machine learning, which is:
+- We have to ask ourselves a fundamental question regarding the idea of a machine learning, which is:
 
 ```{r, echo = FALSE, out.width="50%", fig.align='center'}
 knitr::include_graphics("./pictures/learning.png")
@@ -117,31 +117,38 @@ The following types of problems are useful :
 
 # Classification 
 
-A classification problem is defined by the target or target variables. 
-If the target variable is categorical in nature than it is a classification problem. 
-Think of categorical as groupings and classification as the act of assigning the correct grouping. 
-In these cases, you could face either a binary or multiple classification problems.
-Classification models are very useful to use on problems that involve a decision based on a certain set of input(s). 
-Refer to section titled **_Example of Classification Problem using `EzML`_** for an example of how to conduct a classification model. 
+- Functions as its name suggests, by classifying data in order to then make predictions. 
+- Is one of the supervised learning techniques. 
+- Used for predictive modeling.
+- Uses a classification model via a learning algorithm.
 
 # Regression 
 
-In a regression problem the target variable is linear in nature. 
-The predictive purpose of regression is to predict the linear trend of a target variable from an input or inputs. 
-Refer to section titled **_Example of Regression Problem using `EzML`_** for an example of how to conduct a regression model.
+- Regression analysis is a fundamental concept in the field of machine learning. 
+
+    - It falls under supervised learning wherein the algorithm is trained with both input features and output labels. 
+    - It helps in establishing a relationship among the variables by estimating how one variable affects the other. 
+    - It consists of mathematical methods that allow data scientists to predict a continuous outcome (y) based on the value of one or more predictor variables (x). 
+    
+- Linear regression is probably the most popular form of regression analysis because of its ease-of-use in predicting and forecasting.
 
 # Time Series 
 
-Times series problems are regression problems with a time element. 
-However, it should be known that times series models may be classification type problems if each time stamp requires a time based prediction or even a combination of the two. 
-Many time series solutions actually use a distributed machine learning system that provides both a classification and regression prediction for the future time period. 
-Refer to section titled **_Example of Time Series Problem using `EzML`_** for an example of how to conduct a time series model.
+- A time series is a sequence of observations taken sequentially in time. 
+
+- Time series forecasting involves taking models then fit them on historical data then using them to predict future observations. 
+
+- The steps that are considered to shift the data backward in the time(sequence), called lag times or lags. 
+
+- Therefore, a time series problem can be transformed into a supervised ML by adding lags of measurements as inputs of the supervised ML.
 
 # Clustering 
 
-Clustering problems are classification problems, however, there is no target variable hence we are dealing with unsupervised technique. 
-The model will attempt to use optimized linear techniques to cluster inputs into groupings based on their relationships. 
-Different models utilize various optimized techniqtues and linear methods to group the inputs and associate the relationships. 
+- It is basically a type of unsupervised learning method .
+
+- An unsupervised learning method is a method in which we draw references from datasets consisting of input data without labelled responses. 
+
+- Generally, it is used as a process to find meaningful structure, explanatory underlying processes, generative features, and groupings inherent in a set of examples.
 
 # Supervised Deep Learning 
 
@@ -163,58 +170,56 @@ We will be discussing the various types of deep learning models that there are a
 
 # Deep Learning using Structured Data 
 
-We will discuss the proper steps to modeling with structured data using deep learning for classification and regression problems. 
+- We will discuss the proper steps to modeling with structured data using deep learning for classification and regression problems. 
 
 # *(Regression)* using Deep Learning  
 
-If the problem involves data that is linear in nature and you need to predict the future value or linear **_target variable_** you most likely need a regression model. 
+- If the problem involves data that is linear in nature and you need to predict the future value or linear **_target variable_** you most likely need a regression model. 
 
-Deep Learning is very effective at regression models and provides reliable results, but may be difficult to train effectively. 
+- Deep Learning is very effective at regression models and provides reliable results, but may be difficult to train effectively. 
 
-We will discuss some best practices when using deep learning to address a regression problem *(i.e. predicting the future value of the close price of an asset in the stock market.)*
+- We will discuss some best practices when using deep learning to address a regression problem *(i.e. predicting the future value of the close price of an asset in the stock market.)*
 
 # *(Classification)* using Deep Learning
 
-A deep learning model designed for classification is necessary when the problem/data involves predicting the likely outcome of a **_target variables_** that is categorical in nature. 
+- A deep learning model designed for classification is necessary when the problem/data involves predicting the likely outcome of a **_target variables_** that is categorical in nature. 
 
-We will be discussing some best practices to design a classifier using deep learning. *(i.e. predicting the class of a type of flower from measurements of the different varieties.)* 
+- We will be discussing some best practices to design a classifier using deep learning. *(i.e. predicting the class of a type of flower from measurements of the different varieties.)* 
 
 # Deep Learning using Unstructured Data: *(Text)*
 
-There are a few options when it comes to using supervised deep learning techniques for text problems. 
+- There are a few options when it comes to using supervised deep learning techniques for text problems. 
 
-In this course we will focused on two methods **_text classification and text generation_**. 
+- In this course we will focused on two methods **_text classification and text generation_**. 
 
-Each are basically a form of classification as the classifiers will simple input a text and attempt to infer the class from the recognized features, and the text generation will eseentially predict the next character of a text from the features it learns during training. 
+- Each are basically a form of classification as the classifiers will simple input a text and attempt to infer the class from the recognized features, and the text generation will eseentially predict the next character of a text from the features it learns during training. 
 
 # Text Classification using Deep Learning 
 
-One of the most important steps to modeling with text is the actual reshaping of the data for the model to ingest. 
+- One of the most important steps to modeling with text is the actual reshaping of the data for the model to ingest. 
 
-We are going to discuss the appropriate steps to process your text data. 
+- We are going to discuss the appropriate steps to process your text data. 
 
-We will then discuss the steps to architect a deep learning model to classify texts *(... the purpose of the classification that a model is targeted to address is all determined by the data.)*, train the model, and test the model's performance. 
+- We will then discuss the steps to architect a deep learning model to classify texts *(... the purpose of the classification that a model is targeted to address is all determined by the data.)*, train the model, and test the model's performance. 
 
 # Text Generation using Deep Learning 
 
-We will discuss how to construct a deep text generation model that can train on samples texts and attempt to write its own text outputs. 
+- We will discuss how to construct a deep text generation model that can train on samples texts and attempt to write its own text outputs. 
 
-We will discuss how the samples of text and how the are pre-processed and shaped may effect the overall results. 
+- We will discuss how the samples of text and how the are pre-processed and shaped may effect the overall results. 
 
-We will need to be creative in the training approach if we expect the model to become a writer like a human. 
+- We will need to be creative in the training approach if we expect the model to become a writer like a human. 
 
 # Deep Learning using Unstructured Data *(Images)*
 
-One of the most important steps to modeling with images is the actual reshaping of the data for the model to ingest. 
+- One of the most important steps to modeling with images is the actual reshaping of the data for the model to ingest. 
 
-We are going to discuss the appropriate steps to process your text data. 
+- We are going to discuss the appropriate steps to process your text data. 
 
-We will then discuss the steps to architect a deep learning model to classify images, train the model, and test the model's performance. 
+- We will then discuss the steps to architect a deep learning model to classify images, train the model, and test the model's performance. 
 
 # Image Classifcation using Deep Learning 
 
-We will discuss how to construct a deep image classifier model that can train on samples images and attempt to classify its own outputs. 
+- Image classification is a supervised learning problem: define a set of target classes *(objects to identify in images)*, and train a model to recognize them using labeled example photos. 
 
-We will discuss how the samples of images and how they are pre-processed and shaped may effect the overall results. 
-
-We will need to be creative in the training approach if we expect the model to become a successful image classifier.
+- Early computer vision models relied on raw pixel data as the input to the model. 
